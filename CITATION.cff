@@ -3,7 +3,7 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "Platelet percolation simulator and calibrated multivariate threshold law"
 type: software
-version: "0.1.0"
+version: "0.1.2"
 date-released: "TBD"
 authors:
   - family-names: "Vijayaraghavan"

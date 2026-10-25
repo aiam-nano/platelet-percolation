@@ -432,6 +432,8 @@ def make_sheet(kind, R0=1.0, h=None, amp=0.0, lam=1.0, Rc=1.0, nrim=48):
 
 
 def run_once(mode, pos, rot, rad, hth, L, brad, sheet=None, ncell=None):
+    if L < 4.0 * brad.max():
+        raise ValueError("box side L must be at least 4 x the largest bounding radius: contacts are recorded on the minimum image only")
     s = sheet if sheet is not None else EMPTY
     if ncell is None:
         ncell = max(3, int(L // (2 * brad.max())))

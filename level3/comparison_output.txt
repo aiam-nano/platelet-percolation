@@ -1,0 +1,51 @@
+== A. Deterministic pair tests ==
+pairs disc: 0 mismatches of 4000 (allowed 8) PASS
+pairs cyl : 0 mismatches of 4000 (allowed 8) PASS
+== B. Deterministic configuration tests ==
+config m0_t0.0   : 0 of 20 differ (allowed 1) PASS
+config m1_t0.25  : 0 of 20 differ (allowed 1) PASS
+config m1_t0.05  : 0 of 20 differ (allowed 1) PASS
+== C. Statistics ==
+disc                          : ref 0.98516+-0.00425  new 0.98696+-0.00465  diff +0.18%  tol 2.42%  PASS
+disc_L32                      : ref 0.97720+-0.00200  new 0.98082+-0.00189  diff +0.37%  tol 1.04%  PASS
+cyl_A8                        : ref 0.12928+-0.00072  new 0.12885+-0.00074  diff -0.33%  tol 2.91%  PASS
+cyl_A50                       : ref 0.02760+-0.00015  new 0.02737+-0.00014  diff -0.82%  tol 2.76%  PASS
+stack3_A60                    : ref 0.06315+-0.00029  new 0.06366+-0.00029  diff +0.80%  tol 2.45%  PASS
+lognormal0.4_A80              : ref 0.01348+-0.00009  new 0.01357+-0.00010  diff +0.70%  tol 3.59%  PASS
+aligned_k6.312_ell6_A40       : ref 0.03902+-0.00021  new 0.03882+-0.00017  diff -0.51%  tol 2.56%  PASS
+disc_L48+L64 pooled           : ref 0.97690+-0.00092  new 0.97520+-0.00155  diff -0.17%  tol 0.75%  PASS
+== A2/B2/C2. Shape additions of 25 Oct (square, triangle, spheroid) ==
+pairs square  : 0 mismatches of 4000 (allowed 8) PASS
+pairs triangle: 0 mismatches of 4000 (allowed 8) PASS
+pairs spheroid: 0 mismatches of 4000 (allowed 8) PASS
+config sq_L8   : 0 of 20 differ (allowed 1) PASS
+config tri_L8  : 0 of 20 differ (allowed 1) PASS
+config sph_L8  : 0 of 20 differ (allowed 1) PASS
+square_L32                    : ref 0.87885+-0.00188  new 0.87617+-0.00266  diff -0.31%  tol 1.31%  PASS
+square_L48                    : ref 0.87738+-0.00163  new 0.88022+-0.00175  diff +0.32%  tol 1.02%  PASS
+triangle_L32                  : ref 0.74952+-0.00160  new 0.74921+-0.00243  diff -0.04%  tol 1.36%  PASS
+triangle_L48                  : ref 0.74911+-0.00138  new 0.75176+-0.00158  diff +0.35%  tol 1.04%  PASS
+spheroid1000_L32              : ref 0.97737+-0.00266  new 0.97751+-0.00368  diff +0.01%  tol 1.59%  PASS
+spheroid1000_L48              : ref 0.98099+-0.00228  new 0.97834+-0.00271  diff -0.27%  tol 1.28%  PASS
+== D. Internal consistency of raw arrays ==
+disc     : N_any != min(N_x,N_y,N_z) in 0 realisations; mean eta from raw 0.98696 (+-0.00465) vs stats 0.98696 -> consistent
+disc_L32 : N_any != min(N_x,N_y,N_z) in 0 realisations; mean eta from raw 0.98082 (+-0.00189) vs stats 0.98082 -> consistent
+disc_L48 : N_any != min(N_x,N_y,N_z) in 0 realisations; mean eta from raw 0.97098 (+-0.00263) vs stats 0.97098 -> consistent
+disc_L64 : N_any != min(N_x,N_y,N_z) in 0 realisations; mean eta from raw 0.97745 (+-0.00192) vs stats 0.97745 -> consistent
+square_L32: N_any != min(N_x,N_y,N_z) in 0 realisations; mean eta from raw 0.87617 (+-0.00266) vs stats 0.87617 -> consistent
+square_L48: N_any != min(N_x,N_y,N_z) in 0 realisations; mean eta from raw 0.88022 (+-0.00175) vs stats 0.88022 -> consistent
+triangle_L32: N_any != min(N_x,N_y,N_z) in 0 realisations; mean eta from raw 0.74921 (+-0.00243) vs stats 0.74921 -> consistent
+triangle_L48: N_any != min(N_x,N_y,N_z) in 0 realisations; mean eta from raw 0.75176 (+-0.00158) vs stats 0.75176 -> consistent
+== E. Diagnostics (no pass/fail): per-axis winding, reduced density = (4pi/3) N / L^3 ==
+disc      (L=24) new :  any 0.9870+-0.0047  x 1.0142+-0.0047  y 1.0097+-0.0047  z 1.0096+-0.0049
+           ref :  any 0.9795+-0.0026  x 1.0090+-0.0028  y 1.0081+-0.0030  z 1.0130+-0.0027
+disc_L32  (L=32) new :  any 0.9808+-0.0019  x 1.0000+-0.0021  y 0.9999+-0.0019  z 1.0036+-0.0019
+           ref :  any 0.9809+-0.0020  x 1.0035+-0.0020  y 1.0025+-0.0021  z 1.0010+-0.0020
+disc_L48  (L=48) new :  any 0.9710+-0.0026  x 0.9901+-0.0021  y 0.9853+-0.0029  z 0.9907+-0.0026
+disc_L64  (L=64) new :  any 0.9775+-0.0019  x 0.9861+-0.0019  y 0.9870+-0.0023  z 0.9880+-0.0019
+           ref :  any 0.9768+-0.0015  x 0.9868+-0.0016  y 0.9880+-0.0017  z 0.9854+-0.0015
+square_L32 (L=32) new :  any 0.8762+-0.0027  x 0.8970+-0.0028  y 0.8979+-0.0029  z 0.9015+-0.0027
+square_L48 (L=48) new :  any 0.8802+-0.0018  x 0.8922+-0.0020  y 0.8926+-0.0022  z 0.8921+-0.0023
+triangle_L32 (L=32) new :  any 0.7492+-0.0024  x 0.7686+-0.0030  y 0.7696+-0.0024  z 0.7686+-0.0025
+triangle_L48 (L=48) new :  any 0.7518+-0.0016  x 0.7626+-0.0014  y 0.7627+-0.0017  z 0.7599+-0.0019
+OVERALL PASS

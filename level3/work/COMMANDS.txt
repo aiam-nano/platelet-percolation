@@ -1,0 +1,28 @@
+All commands were run from the workspace root. python is C:\Python314\python.exe (3.14.4). numba 0.68.0 was installed because it was not already present.
+
+python -c "<load inputs/pairs_inputs.json and print keys, lengths and the first pair>"
+python -c "<np.load pairs_inputs.npz, configs_inputs.npz, shapes_pairs_inputs.npz, shapes_configs_inputs.npz and print every array shape>"
+python -c "<print position ranges, normal lengths, frame orthonormality, spheroid R and c ranges, pair radius and half-thickness ranges>"
+python -m pip install numba
+python -c "import numba; print(numba.__version__)"
+python -c "import os; print('cpus', os.cpu_count())"
+python -c "<import work/core.py; disc_hit on an intersecting tilted pair, a separated coplanar pair, an overlapping coplanar pair, and a parallel gap>"
+python -c "<cylinder_hit on lateral overlap, lateral gap, axial gap, axial overlap, perpendicular cross, and a separated perpendicular pair>"
+python -c "from numba import njit
+@njit
+def t(a, b):
+    return a % b
+print('mod', t(-1, 5), t(-3, 4))"
+python work/self_tests.py
+python -c "<replay cylinder sample seed 3 and compare the GJK gap identity; bounding-sphere misses return a zero separator>"
+python -c "<spheroid c=R witness check, seed 9, 300 pairs, Euclidean membership>"
+python -m py_compile work/run_all.py work/core.py
+python -c "<benchmark core.simulate kind=cylinder, L=24, 4000 particles, half-height 0.125; wrapped at N=2132 in 0.089 s>"
+python work/run_all.py
+
+work/run_all.py then ran, with cwd the workspace root:
+
+python validate_results.py results.json
+
+stdout: FORMAT OK
+exit code: 0

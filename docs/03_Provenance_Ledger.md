@@ -12,7 +12,7 @@ The constant c0 = 1.4421 is 1.5 times the Yi and Tawerghi (2009) thin-disc reduc
 
 The constants c1 = 2(pi + 3)/pi and c2 = 4/pi come from the Isihara mean excluded volume of a convex body, V_ex = 2V + S M / (2 pi), evaluated for a cylinder (volume pi R squared t, surface 2 pi R squared + 2 pi R t, mean-curvature integral pi t + pi squared R). The excluded-volume formula was checked by Monte Carlo (test T3, agreement within 1.5 standard errors at four thicknesses; for spheroids, literature_checks/spheroid_vex_test.py against 2V + S M / 2 pi within 0.1 per cent). Expansion of the ratio V_ex / V gives the denominator Ae + c1 + c2/Ae. These are derived, not fitted.
 
-The elliptic-integral factor Kell(a), the arc-length ratio of a sinusoidal ripple of slope parameter a, is a closed-form geometric quantity and has no free constant.
+The elliptic-integral factor Kell(a) = pi / [2 k E(1 - k^2)], with k = 1 / <sqrt(1 + a^2 cos^2 theta)>, is the inverse excluded-volume ratio of an elliptical footprint with semi-axes k and 1 (V_ex = A P / 2 for a flat convex body). It is not the arc-length ratio of a sinusoid, which was the description in the first version of this ledger (Level 4 finding F2, reproduced on 25 October 2026; the code and the main text were already correct). Kell is a geometric ansatz for the ripple, with no free constant of its own; the only fitted quantity in the ripple factor is the damping CRIP, and the ripple fit is the weakest in the law (chi-squared 241 on 29 degrees of freedom).
 
 The matrix (eigenvalue) treatment of polydispersity inside P, built from moments of a log-normal distribution, follows the standard second-virial argument and has no free constant of its own; it is exact only for log-normal radii and thicknesses.
 

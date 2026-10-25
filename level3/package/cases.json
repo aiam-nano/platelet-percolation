@@ -1,0 +1,128 @@
+{
+ "note": "n_insert is an upper limit on particles per realisation; stop each realisation when it first wraps. All lengths in units of the mean radius.",
+ "cases": {
+  "disc": {
+   "kind": "thin_disc",
+   "L": 24,
+   "nreal": 100,
+   "n_insert": "0.40*L^3",
+   "record_raw": true
+  },
+  "disc_L32": {
+   "kind": "thin_disc",
+   "L": 32,
+   "nreal": 300,
+   "n_insert": "0.40*L^3",
+   "record_raw": true
+  },
+  "disc_L48": {
+   "kind": "thin_disc",
+   "L": 48,
+   "nreal": 100,
+   "n_insert": "0.40*L^3",
+   "record_raw": true
+  },
+  "disc_L64": {
+   "kind": "thin_disc",
+   "L": 64,
+   "nreal": 60,
+   "n_insert": "0.40*L^3",
+   "record_raw": true
+  },
+  "cyl_A8": {
+   "kind": "cylinder",
+   "R": 1.0,
+   "t": 0.25,
+   "L": 24,
+   "nreal": 100,
+   "n_insert": "2.5*L^3",
+   "record_raw": false
+  },
+  "cyl_A50": {
+   "kind": "cylinder",
+   "R": 1.0,
+   "t": 0.04,
+   "L": 24,
+   "nreal": 100,
+   "n_insert": "2.5*L^3",
+   "record_raw": false
+  },
+  "stack3_A60": {
+   "kind": "cylinder",
+   "R": 1.0,
+   "t": 0.1,
+   "L": 24,
+   "nreal": 100,
+   "n_insert": "2.5*L^3",
+   "record_raw": false
+  },
+  "lognormal0.4_A80": {
+   "kind": "cylinder_lognormal",
+   "sigma_lnR": 0.4,
+   "mean_lnR": -0.08,
+   "R_cap": 6.0,
+   "t": 0.025,
+   "L": 24,
+   "nreal": 100,
+   "n_insert": "2.5*L^3",
+   "record_raw": false
+  },
+  "aligned_k6.312_ell6_A40": {
+   "kind": "cylinder_aligned",
+   "R": 1.0,
+   "t": 0.05,
+   "L": 24,
+   "nreal": 100,
+   "kappa": 6.312,
+   "domain_size": 6.0,
+   "n_insert": "2.5*L^3",
+   "record_raw": false
+  },
+  "square_L32": {
+   "kind": "square_plate",
+   "L": 32,
+   "nreal": 150,
+   "n_insert": "0.40*L^3",
+   "record_raw": true
+  },
+  "square_L48": {
+   "kind": "square_plate",
+   "L": 48,
+   "nreal": 100,
+   "n_insert": "0.40*L^3",
+   "record_raw": true
+  },
+  "triangle_L32": {
+   "kind": "triangle_plate",
+   "L": 32,
+   "nreal": 150,
+   "n_insert": "0.40*L^3",
+   "record_raw": true
+  },
+  "triangle_L48": {
+   "kind": "triangle_plate",
+   "L": 48,
+   "nreal": 100,
+   "n_insert": "0.40*L^3",
+   "record_raw": true
+  },
+  "spheroid1000_L32": {
+   "kind": "oblate_spheroid",
+   "L": 32,
+   "nreal": 100,
+   "n_insert": "0.40*L^3",
+   "record_raw": false,
+   "R": 1.0,
+   "c": 0.001
+  },
+  "spheroid1000_L48": {
+   "kind": "oblate_spheroid",
+   "L": 48,
+   "nreal": 60,
+   "n_insert": "0.40*L^3",
+   "record_raw": false,
+   "R": 1.0,
+   "c": 0.001
+  }
+ }
+}

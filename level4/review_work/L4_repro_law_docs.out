@@ -1,0 +1,241 @@
+
+========================================================================
+Kell versus arc-length ratio
+========================================================================
+a=0.0  arc=1.000000  Kell(limit) n/a
+a=0.5  arc_quad=1.059839  arc_ellip=1.059839  Kell=1.090398  Kell/arc=1.028833  k=0.943539
+a=1.0  arc_quad=1.216007  arc_ellip=1.216007  Kell=1.331373  Kell/arc=1.094873  k=0.822364
+a=1.2  arc_quad=1.296484  arc_ellip=1.296484  Kell=1.457783  Kell/arc=1.124412  k=0.771317
+a=1.5  arc_quad=1.430280  arc_ellip=1.430280  Kell=1.670392  Kell/arc=1.167878  k=0.699165
+a=2.0  arc_quad=1.677610  arc_ellip=1.677610  Kell=2.068891  Kell/arc=1.233237  k=0.596087
+a=3.0  arc_quad=2.224097  arc_ellip=2.224098  Kell=2.960813  Kell/arc=1.331243  k=0.449622
+
+========================================================================
+polydispersity matrix versus Isihara kernel
+========================================================================
+monodisperse code lambda vs Vex scale check at R=1
+  thin: Vex=9.869643  code_lam=1.233705  Vex/code_lam=8.000
+  A100: Vex=10.256749  code_lam=1.282094  Vex/code_lam=8.000
+  A30: Vex=11.169859  code_lam=1.396232  Vex/code_lam=8.000
+  A10: Vex=13.854145  code_lam=1.731768  Vex/code_lam=8.000
+  A8: Vex=14.889550  code_lam=1.861194  Vex/code_lam=8.000
+
+factor comparison (1 = code matrix matches Isihara ratio)
+sig=0.20 A=1e+06: code_matrix_factor=0.9139  P(kappa=0.625)=0.9367  Isihara T=2/A factor=0.9139  Isihara T=1/A factor=0.9139  code/Isihara(T=2/A)=1.0000
+sig=0.20 A=80: code_matrix_factor=0.9172  P(kappa=0.625)=0.9401  Isihara T=2/A factor=0.9172  Isihara T=1/A factor=0.9156  code/Isihara(T=2/A)=1.0000
+sig=0.20 A=60: code_matrix_factor=0.9182  P(kappa=0.625)=0.9412  Isihara T=2/A factor=0.9182  Isihara T=1/A factor=0.9161  code/Isihara(T=2/A)=1.0000
+sig=0.20 A=30: code_matrix_factor=0.9221  P(kappa=0.625)=0.9452  Isihara T=2/A factor=0.9221  Isihara T=1/A factor=0.9182  code/Isihara(T=2/A)=1.0000
+sig=0.20 A=20: code_matrix_factor=0.9256  P(kappa=0.625)=0.9488  Isihara T=2/A factor=0.9256  Isihara T=1/A factor=0.9202  code/Isihara(T=2/A)=1.0000
+sig=0.20 A=10: code_matrix_factor=0.9344  P(kappa=0.625)=0.9578  Isihara T=2/A factor=0.9344  Isihara T=1/A factor=0.9256  code/Isihara(T=2/A)=1.0000
+sig=0.20 A=8: code_matrix_factor=0.9381  P(kappa=0.625)=0.9615  Isihara T=2/A factor=0.9381  Isihara T=1/A factor=0.9281  code/Isihara(T=2/A)=1.0000
+sig=0.30 A=1e+06: code_matrix_factor=0.8165  P(kappa=0.625)=0.8624  Isihara T=2/A factor=0.8165  Isihara T=1/A factor=0.8165  code/Isihara(T=2/A)=1.0000
+sig=0.30 A=80: code_matrix_factor=0.8228  P(kappa=0.625)=0.8691  Isihara T=2/A factor=0.8228  Isihara T=1/A factor=0.8197  code/Isihara(T=2/A)=1.0000
+sig=0.30 A=60: code_matrix_factor=0.8248  P(kappa=0.625)=0.8712  Isihara T=2/A factor=0.8248  Isihara T=1/A factor=0.8207  code/Isihara(T=2/A)=1.0000
+sig=0.30 A=30: code_matrix_factor=0.8323  P(kappa=0.625)=0.8791  Isihara T=2/A factor=0.8323  Isihara T=1/A factor=0.8248  code/Isihara(T=2/A)=1.0000
+sig=0.30 A=20: code_matrix_factor=0.8392  P(kappa=0.625)=0.8864  Isihara T=2/A factor=0.8392  Isihara T=1/A factor=0.8286  code/Isihara(T=2/A)=1.0000
+sig=0.30 A=10: code_matrix_factor=0.8567  P(kappa=0.625)=0.9049  Isihara T=2/A factor=0.8567  Isihara T=1/A factor=0.8392  code/Isihara(T=2/A)=1.0000
+sig=0.30 A=8: code_matrix_factor=0.8640  P(kappa=0.625)=0.9126  Isihara T=2/A factor=0.8640  Isihara T=1/A factor=0.8440  code/Isihara(T=2/A)=1.0000
+sig=0.40 A=1e+06: code_matrix_factor=0.6971  P(kappa=0.625)=0.7668  Isihara T=2/A factor=0.6971  Isihara T=1/A factor=0.6971  code/Isihara(T=2/A)=1.0000
+sig=0.40 A=80: code_matrix_factor=0.7060  P(kappa=0.625)=0.7766  Isihara T=2/A factor=0.7060  Isihara T=1/A factor=0.7017  code/Isihara(T=2/A)=1.0000
+sig=0.40 A=60: code_matrix_factor=0.7089  P(kappa=0.625)=0.7798  Isihara T=2/A factor=0.7089  Isihara T=1/A factor=0.7031  code/Isihara(T=2/A)=1.0000
+sig=0.40 A=30: code_matrix_factor=0.7197  P(kappa=0.625)=0.7917  Isihara T=2/A factor=0.7197  Isihara T=1/A factor=0.7089  code/Isihara(T=2/A)=1.0000
+sig=0.40 A=20: code_matrix_factor=0.7297  P(kappa=0.625)=0.8027  Isihara T=2/A factor=0.7297  Isihara T=1/A factor=0.7144  code/Isihara(T=2/A)=1.0000
+sig=0.40 A=10: code_matrix_factor=0.7557  P(kappa=0.625)=0.8313  Isihara T=2/A factor=0.7557  Isihara T=1/A factor=0.7297  code/Isihara(T=2/A)=1.0000
+sig=0.40 A=8: code_matrix_factor=0.7668  P(kappa=0.625)=0.8435  Isihara T=2/A factor=0.7668  Isihara T=1/A factor=0.7368  code/Isihara(T=2/A)=1.0000
+sig=0.50 A=1e+06: code_matrix_factor=0.5687  P(kappa=0.625)=0.6575  Isihara T=2/A factor=0.5687  Isihara T=1/A factor=0.5687  code/Isihara(T=2/A)=1.0000
+sig=0.50 A=80: code_matrix_factor=0.5791  P(kappa=0.625)=0.6696  Isihara T=2/A factor=0.5791  Isihara T=1/A factor=0.5740  code/Isihara(T=2/A)=1.0000
+sig=0.50 A=60: code_matrix_factor=0.5825  P(kappa=0.625)=0.6735  Isihara T=2/A factor=0.5825  Isihara T=1/A factor=0.5757  code/Isihara(T=2/A)=1.0000
+sig=0.50 A=30: code_matrix_factor=0.5953  P(kappa=0.625)=0.6883  Isihara T=2/A factor=0.5953  Isihara T=1/A factor=0.5825  code/Isihara(T=2/A)=1.0000
+sig=0.50 A=20: code_matrix_factor=0.6074  P(kappa=0.625)=0.7023  Isihara T=2/A factor=0.6074  Isihara T=1/A factor=0.5890  code/Isihara(T=2/A)=1.0000
+sig=0.50 A=10: code_matrix_factor=0.6393  P(kappa=0.625)=0.7392  Isihara T=2/A factor=0.6393  Isihara T=1/A factor=0.6074  code/Isihara(T=2/A)=1.0000
+sig=0.50 A=8: code_matrix_factor=0.6534  P(kappa=0.625)=0.7554  Isihara T=2/A factor=0.6534  Isihara T=1/A factor=0.6159  code/Isihara(T=2/A)=1.0000
+sig=0.80 A=1e+06: code_matrix_factor=0.2339  P(kappa=0.625)=0.3275  Isihara T=2/A factor=0.2339  Isihara T=1/A factor=0.2339  code/Isihara(T=2/A)=1.0000
+sig=0.80 A=80: code_matrix_factor=0.2417  P(kappa=0.625)=0.3384  Isihara T=2/A factor=0.2417  Isihara T=1/A factor=0.2379  code/Isihara(T=2/A)=1.0000
+sig=0.80 A=60: code_matrix_factor=0.2443  P(kappa=0.625)=0.3420  Isihara T=2/A factor=0.2443  Isihara T=1/A factor=0.2391  code/Isihara(T=2/A)=1.0000
+sig=0.80 A=30: code_matrix_factor=0.2544  P(kappa=0.625)=0.3561  Isihara T=2/A factor=0.2544  Isihara T=1/A factor=0.2443  code/Isihara(T=2/A)=1.0000
+sig=0.80 A=20: code_matrix_factor=0.2641  P(kappa=0.625)=0.3698  Isihara T=2/A factor=0.2641  Isihara T=1/A factor=0.2494  code/Isihara(T=2/A)=1.0000
+sig=0.80 A=10: code_matrix_factor=0.2918  P(kappa=0.625)=0.4085  Isihara T=2/A factor=0.2918  Isihara T=1/A factor=0.2641  code/Isihara(T=2/A)=1.0000
+sig=0.80 A=8: code_matrix_factor=0.3047  P(kappa=0.625)=0.4266  Isihara T=2/A factor=0.3047  Isihara T=1/A factor=0.2713  code/Isihara(T=2/A)=1.0000
+
+========================================================================
+calibration targets versus P()
+========================================================================
+thin Br vs (1+kappa s^2) vs full P
+  s=0.10 Br_sim=1.007 drift=1.006 (-0.1%)  fullP=0.984 (-2.3%)
+  s=0.20 Br_sim=1.021 drift=1.025 (+0.4%)  fullP=0.937 (-8.3%)
+  s=0.30 Br_sim=1.053 drift=1.056 (+0.3%)  fullP=0.862 (-18.1%)
+  s=0.40 Br_sim=1.099 drift=1.100 (+0.1%)  fullP=0.767 (-30.2%)
+  s=0.45 Br_sim=1.136 drift=1.127 (-0.8%)  fullP=0.713 (-37.2%)
+finite-aspect sim ratio vs full P
+  A=33.333 s=0.30 sim=0.843 P=0.878 (+4.1%)
+  A=30 s=0.40 sim=0.797 P=0.792 (-0.7%)
+  A=10 s=0.30 sim=0.925 P=0.905 (-2.2%)
+
+========================================================================
+lognormal truncation (mean radius, cap, no redraw)
+========================================================================
+sig=0.3 cap=6: P(R>cap)=0.000000  E[R|cap]=1.000140 (ideal 1)  E[R^2|cap]=1.0943 (ideal 1.0942)  volume bias E[R^2|cap]/E[R^2]=1.0001
+sig=0.4 cap=6: P(R>cap)=0.000002  E[R|cap]=1.000138 (ideal 1)  E[R^2|cap]=1.1735 (ideal 1.1735)  volume bias E[R^2|cap]/E[R^2]=1.0000
+sig=0.5 cap=6: P(R>cap)=0.000066  E[R|cap]=0.999760 (ideal 1)  E[R^2|cap]=1.2810 (ideal 1.2840)  volume bias E[R^2|cap]/E[R^2]=0.9977
+sig=0.8 cap=5: P(R>cap)=0.007961  E[R|cap]=0.953963 (ideal 1)  E[R^2|cap]=1.5116 (ideal 1.8965)  volume bias E[R^2|cap]/E[R^2]=0.7970
+sig=0.8 cap=6: P(R>cap)=0.004144  E[R|cap]=0.971142 (ideal 1)  E[R^2|cap]=1.6194 (ideal 1.8965)  volume bias E[R^2|cap]/E[R^2]=0.8539
+
+========================================================================
+exam scores finallaw2 and finallaw3
+========================================================================
+sha256 3ac1e779161b3e09efd65a6c90c4b26d0d9c0e518ad267660028ac89d279271d
+with documented S_loc
+  law2 F1   law 0.02672 truth 0.02663 err +0.33%
+  law2 F2   law 0.11999 truth 0.11950 err +0.41%
+  law2 F3   law 0.07593 truth 0.07625 err -0.41%
+  law2 F4   law 0.01336 truth 0.01337 err -0.05%
+  law2 F8   law 0.03812 truth 0.03747 err +1.74%
+  law2 F9   law 0.06881 truth 0.06773 err +1.60%
+  law2 F12  law 0.05864 truth 0.05627 err +4.21%
+  law2 F10  ratio 1.2106 truth 1.1880 err +1.90%
+  law2 F11  ratio 1.2106 truth 1.2013 err +0.77%
+  law2 MAE 1.271% over 9
+  law3 F1   law 0.02672 truth 0.02663 err +0.33%
+  law3 F2   law 0.11999 truth 0.11950 err +0.41%
+  law3 F3   law 0.07593 truth 0.07625 err -0.41%
+  law3 F4   law 0.01336 truth 0.01337 err -0.05%
+  law3 F8   law 0.03787 truth 0.03747 err +1.07%
+  law3 F9   law 0.06841 truth 0.06773 err +1.01%
+  law3 F12  law 0.05841 truth 0.05627 err +3.80%
+  law3 F10  ratio 1.2106 truth 1.1880 err +1.90%
+  law3 F11  ratio 1.2106 truth 1.2013 err +0.77%
+  law3 MAE 1.085% over 9
+
+========================================================================
+law limits and pole
+========================================================================
+  law2 A=1000 phi=1.437433e-03 eta=0.958288
+  law2 A=1e+06 phi=1.442095e-06 eta=0.961397
+  law2 monodisperse zero-order thin eta 0.961397
+  law3 A=1000 phi=1.437433e-03 eta=0.958288
+  law3 A=1e+06 phi=1.442095e-06 eta=0.961397
+  law3 monodisperse zero-order thin eta 0.961397
+finallaw3 Kal pole scan
+  S=0.5 d=2 Kal=1.8634
+  S=1.0 d=2 Kal=13.6403
+  S=0.5 d=1 Kal=34.9357
+  S=1.0 d=1 Kal=-1.0607
+  S=0.8 d=1.5 Kal=20.8723
+
+========================================================================
+stack Ae versus single cylinder
+========================================================================
+phi(A=60,N=4) 0.07897165455991055 phi(A=15) 0.07897165455991055
+phi(A=60,N=3) 0.06200884389419607 phi(A=20) 0.06200884389419607
+
+========================================================================
+experimental comparison recompute
+========================================================================
+rows matching csv mid-ratio and law_at_A_high: 16/16
+  Few-layer graphene in NMP                recomputed 2.01 csv 2.01
+  xGn-25 in PLA                            recomputed 1.01 csv 1.01
+  N02 in PLA                               recomputed 0.24 csv 0.24
+  GNP in UPR (12.1 um / 51.5 nm)           recomputed 1.06 csv 1.06
+  Foliated graphite in nylon 6             recomputed 1.22 csv 1.22
+  Graphite sheets in PMMA (UG)             recomputed 1.29 csv 1.29
+  Graphite nanosheets in PMMA              recomputed 0.49 csv 0.49
+  GNS in TPU                               recomputed 4.86 csv 4.86
+  GNP-L in PLA                             recomputed 5.19 csv 5.19
+  GNP-S in PLA                             recomputed 3.56 csv 3.56
+  xGnP-1 in PP (powder coated)             recomputed 0.14 csv 0.14
+  xGnP-1 in PP (melt mixed)                recomputed 11.96 csv 11.96
+  xGnP-15 in PP (powder coated)            recomputed 8.07 csv 8.07
+  xGnP-15 in PP (melt mixed)               recomputed 186.27 csv 186.27
+  GNP in PLA (AFM)                         recomputed 0.73 csv 0.73
+  xGnP-M-15 in epoxy                       recomputed 14.73 csv 14.73
+mid-ratios in [0.7,1.3]: 5 -> ['xGn-25 in PLA', 'GNP in UPR (12.1 um / 51.5 nm)', 'Foliated graphite in nylon 6', 'Graphite sheets in PMMA (UG)', 'GNP in PLA (AFM)']
+min mid 0.14  max mid 186.27
+
+========================================================================
+gap_score
+========================================================================
+Cylinder tests (sim/1.015 vs pre-registered prediction)
+G1a: sim 1.220+-0.007% (raw 1.238) pred 1.212 err(pred/sim-1) -0.7% window ±6 PASS
+G1b: sim 0.927+-0.010% (raw 0.941) pred 0.932 err(pred/sim-1) +0.6% window ±6 PASS
+G1c: sim 2.977+-0.027% (raw 3.022) pred 2.985 err(pred/sim-1) +0.3% window ±6 PASS
+B1: sim 1.444+-0.014% (raw 1.466) pred 1.554 err(pred/sim-1) +7.6% window ±8 PASS | no-drift 1.361 (-5.8%)
+B2: sim 0.825+-0.011% (raw 0.837) pred 0.979 err(pred/sim-1) +18.7% window ±8 FAIL | no-drift 0.790 (-4.2%)
+H1: sim 1.032+-0.013% (raw 1.048) pred 1.276 err(pred/sim-1) +23.6% window ±8 FAIL | no-drift 0.926 (-10.3%)
+Q1: sim 1.868+-0.015% (raw 1.896) pred 1.742 err(pred/sim-1) -6.7% window ±8 PASS | no-drift 1.667 (-10.7%)
+C1: sim 2.433+-0.016% (raw 2.469) pred 2.396 err(pred/sim-1) -1.5% window ±6 PASS | no-drift 2.178 (-10.5%) | rival 1.789 (-26.5%)
+C2: sim 2.880+-0.025% (raw 2.923) pred 2.895 err(pred/sim-1) +0.5% window ±6 PASS | no-drift 2.505 (-13.0%) | rival 2.315 (-19.6%)
+C3: sim 6.351+-0.042% (raw 6.446) pred 6.340 err(pred/sim-1) -0.2% window ±6 PASS | no-drift 6.003 (-5.5%) | rival 5.506 (-13.3%)
+C4: sim 1.695+-0.013% (raw 1.721) pred 1.699 err(pred/sim-1) +0.2% window ±6 PASS | no-drift 1.609 (-5.1%) | rival 1.214 (-28.4%)
+G1 apparent excess (sim/FS): number / area-wt / vol-wt
+G1a [np.float64(0.846), np.float64(1.013), np.float64(1.108)]
+G1b [np.float64(0.643), np.float64(1.059), np.float64(1.36)]
+G1c [np.float64(0.619), np.float64(1.021), np.float64(1.311)]
+
+G4 ripple x polydispersity
+P1: paired ratio 1.344+-0.012 (ratio of means 1.340) pred 1.293 err(pred/sim-1) -3.5% PASS
+P2: paired ratio 1.356+-0.013 (ratio of means 1.353) pred 1.293 err(pred/sim-1) -4.4% PASS
+P3: paired ratio 1.353+-0.012 (ratio of means 1.349) pred 1.34 err(pred/sim-1) -0.7% PASS
+P4: paired ratio 1.061+-0.013 (ratio of means 1.056) pred 1.107 err(pred/sim-1) +4.8% PASS
+
+G5 thick biaxial slabs
+TB1: ratio of means 1.241 (paired 1.243+-0.010) pred 1.244 err(pred/sim-1) +0.2% window ±8 PASS
+TB2: ratio of means 1.360 (paired 1.364+-0.013) pred 1.344 err(pred/sim-1) -1.2% window ±8 PASS
+TB3: ratio of means 1.184 (paired 1.186+-0.009) pred 1.206 err(pred/sim-1) +1.9% window ±8 PASS
+TB4: ratio of means 1.247 (paired 1.250+-0.013) pred 1.228 err(pred/sim-1) -1.5% window ±8 PASS
+TB5: ratio of means 1.593 (paired 1.597+-0.012) pred 1.543 err(pred/sim-1) -3.2% window ±15 PASS
+
+G6 random wrinkle fields
+R1: sim ratio 1.064+-0.011 pred (registered) 1.08, mean per-field K 1.080 err +1.5% PASS | per-field corr 0.68
+R2: sim ratio 1.144+-0.008 pred (registered) 1.146, mean per-field K 1.146 err +0.2% PASS | per-field corr -0.08
+R3: sim ratio 1.255+-0.020 pred (registered) 1.199, mean per-field K 1.199 err -4.5% PASS | per-field corr 0.35
+R4: sim ratio 1.149+-0.017 pred (registered) 1.2, mean per-field K 1.200 err +4.4% PASS | per-field corr 0.21
+
+========================================================================
+document numbers from raw jsonl / json
+========================================================================
+  disc linear 1/L of eta_axis_mean: intercept 0.9728 +- 0.0019 chi2 3.05/3
+  disc linear 1/L of eta_median: intercept 0.9745 +- 0.0019 chi2 7.08/3
+   L, mean, median: [(24, 1.0211, 1.0234, 400), (32, 1.0098, 1.0129, 300), (48, 0.9946, 0.995, 150), (64, 0.9896, 0.9921, 100), (96, 0.9864, 0.9886, 40)]
+  square linear 1/L of eta_axis_mean: intercept 0.8740 +- 0.0030 chi2 3.41/2
+  square linear 1/L of eta_median: intercept 0.8743 +- 0.0030 chi2 2.26/2
+   L, mean, median: [(24, 0.9211, 0.923, 300), (32, 0.9038, 0.9067, 200), (48, 0.8973, 0.8993, 100), (64, 0.8912, 0.8918, 60)]
+  triangle linear 1/L of eta_axis_mean: intercept 0.7418 +- 0.0029 chi2 1.44/2
+  triangle linear 1/L of eta_median: intercept 0.7420 +- 0.0029 chi2 5.00/2
+   L, mean, median: [(24, 0.7828, 0.7855, 300), (32, 0.7758, 0.7794, 200), (48, 0.7628, 0.7621, 100), (64, 0.7573, 0.7598, 60)]
+
+========================================================================
+sphere fss weighted means
+========================================================================
+  weighted mean L>=10: 0.3434 +- 0.0011
+  weighted mean L>=14: 0.3421 +- 0.0012
+  weighted mean L>=20: 0.3422 +- 0.0013
+  fit all L: 0.3386 +- 0.0019 chi2 4.76/4
+
+========================================================================
+doc 02 fss_thin.json check
+========================================================================
+  L=8.0: mean 1.0032 +- 0.0077 n=300
+  L=12.0: mean 0.9851 +- 0.0056 n=300
+  L=16.0: mean 0.9770 +- 0.0042 n=300
+  L=24.0: mean 0.9807 +- 0.0026 n=300
+  L=32.0: mean 0.9772 +- 0.0020 n=300
+  L=48.0: mean 0.9756 +- 0.0013 n=300
+  weighted L>=32 ['32.0', '48.0']: 0.9761 +- 0.0011
+  weighted four largest ['32.0', '48.0']: 0.9761 +- 0.0011
+  weighted five largest ['32.0', '48.0']: 0.9761 +- 0.0011
+
+========================================================================
+ripple mesh ratios
+========================================================================
+  flat                   fine-mesh contacts  23297  prod/8 0.9990 (-0.10%)  prod/32 0.9993 (-0.07%)  mesh_only h8 23 prod_only 0
+  a1.2/lam1.0            fine-mesh contacts  20626  prod/8 0.9957 (-0.43%)  prod/32 0.9989 (-0.11%)  mesh_only h8 104 prod_only 16
+  P1,P2 a2.0/lam1.0      fine-mesh contacts  18541  prod/8 0.9946 (-0.54%)  prod/32 0.9992 (-0.08%)  mesh_only h8 113 prod_only 12
+  P3 a1.5/lam0.7         fine-mesh contacts  18549  prod/8 0.9935 (-0.65%)  prod/32 0.9999 (-0.01%)  mesh_only h8 144 prod_only 23
+  P4 a3.0/lam1.5         fine-mesh contacts  22433  prod/8 0.9964 (-0.36%)  prod/32 0.9993 (-0.07%)  mesh_only h8 102 prod_only 22
+  a2.0/lam1.0, radius ratio 0.6 fine-mesh contacts  17742  prod/8 0.9941 (-0.59%)  prod/32 0.9993 (-0.07%)  mesh_only h8 121 prod_only 16
+
+DONE
+
+real	0m2.327s
+user	0m1.802s
+sys	0m0.742s

@@ -1,0 +1,223 @@
+warmup compiled
+deterministic pairs
+  pairs disc: 495 / 4000 intersections
+  pairs cyl: 1086 / 4000 intersections
+  pairs square: 339 / 4000 intersections
+  pairs triangle: 184 / 4000 intersections
+  pairs spheroid: 835 / 4000 intersections
+certify pairs
+  certify {'disc_bad': 0, 'cyl_hit_bad': 0, 'cyl_sep_bad': 0, 'square_bad': 0, 'triangle_bad': 0, 'sph_hit_bad': 0, 'sph_sep_bad': 0}
+deterministic configs
+  configs m0_t0.0: [32, 59, 49, 49, 42, 51, 54, 41, 55, 57, 53, 28, 63, 61, 50, 55, 54, 45, 66, 56]
+  configs m1_t0.25: [38, 36, 42, 31, 45, 43, 32, 27, 37, 26, 48, 41, 30, 32, 39, 48, 39, 29, 29, 35]
+  configs m1_t0.05: [45, 58, 58, 57, 36, 46, 52, 47, 47, 59, 67, 40, 62, 44, 42, 56, 63, 37, 34, 62]
+  configs sq_L8: [102, 111, 106, 144, 122, 136, 117, 88, 116, 107, 122, 107, 125, 93, 93, 113, 95, 89, 126, 104]
+  configs tri_L8: [76, 87, 72, 92, 94, 79, 79, 89, 78, 102, 82, 90, 114, 90, 79, 90, 103, 71, 90, 106]
+  configs sph_L8: [131, 125, 121, 71, 110, 120, 147, 117, 109, 98, 127, 114, 104, 137, 133, 113, 135, 97, 120, 121]
+  config grid checks {'m0_t0.0': {'ncell': 4, 'match': True}, 'm1_t0.25': {'ncell': 4, 'match': True}, 'm1_t0.05': {'ncell': 4, 'match': True}, 'sq_L8': {'ncell': 4, 'match': True}, 'tri_L8': {'ncell': 4, 'match': True}, 'sph_L8': {'ncell': 4, 'match': True}}
+workers 20
+start disc L=24.0 n_insert=5529 nreal=100 stop_all=1
+  disc 10/100  elapsed=0.1s
+  disc 20/100  elapsed=0.1s
+  disc 30/100  elapsed=0.1s
+  disc 40/100  elapsed=0.1s
+  disc 50/100  elapsed=0.2s
+  disc 60/100  elapsed=0.2s
+  disc 70/100  elapsed=0.2s
+  disc 80/100  elapsed=0.2s
+  disc 90/100  elapsed=0.2s
+  disc 100/100  elapsed=0.3s
+done disc mean=0.986962 se=0.00465 n=100 discarded=0 extended=0 censored=0 time=0.3s
+start disc_L32 L=32.0 n_insert=13107 nreal=300 stop_all=1
+  disc_L32 10/300  elapsed=0.1s
+  disc_L32 20/300  elapsed=0.1s
+  disc_L32 30/300  elapsed=0.2s
+  disc_L32 40/300  elapsed=0.2s
+  disc_L32 50/300  elapsed=0.3s
+  disc_L32 60/300  elapsed=0.3s
+  disc_L32 70/300  elapsed=0.3s
+  disc_L32 80/300  elapsed=0.4s
+  disc_L32 90/300  elapsed=0.4s
+  disc_L32 100/300  elapsed=0.4s
+  disc_L32 110/300  elapsed=0.5s
+  disc_L32 120/300  elapsed=0.5s
+  disc_L32 130/300  elapsed=0.5s
+  disc_L32 140/300  elapsed=0.6s
+  disc_L32 150/300  elapsed=0.6s
+  disc_L32 160/300  elapsed=0.6s
+  disc_L32 170/300  elapsed=0.7s
+  disc_L32 180/300  elapsed=0.7s
+  disc_L32 190/300  elapsed=0.7s
+  disc_L32 200/300  elapsed=0.8s
+  disc_L32 210/300  elapsed=0.8s
+  disc_L32 220/300  elapsed=0.9s
+  disc_L32 230/300  elapsed=0.9s
+  disc_L32 240/300  elapsed=1.0s
+  disc_L32 250/300  elapsed=1.0s
+  disc_L32 260/300  elapsed=1.0s
+  disc_L32 270/300  elapsed=1.1s
+  disc_L32 280/300  elapsed=1.1s
+  disc_L32 290/300  elapsed=1.2s
+  disc_L32 300/300  elapsed=1.2s
+done disc_L32 mean=0.980823 se=0.00189 n=300 discarded=0 extended=0 censored=0 time=1.2s
+start disc_L48 L=48.0 n_insert=44236 nreal=100 stop_all=1
+  disc_L48 10/100  elapsed=0.3s
+  disc_L48 20/100  elapsed=0.4s
+  disc_L48 30/100  elapsed=0.6s
+  disc_L48 40/100  elapsed=0.8s
+  disc_L48 50/100  elapsed=1.0s
+  disc_L48 60/100  elapsed=1.2s
+  disc_L48 70/100  elapsed=1.3s
+  disc_L48 80/100  elapsed=1.5s
+  disc_L48 90/100  elapsed=1.6s
+  disc_L48 100/100  elapsed=1.7s
+done disc_L48 mean=0.970981 se=0.00263 n=100 discarded=0 extended=0 censored=0 time=1.7s
+start disc_L64 L=64.0 n_insert=104857 nreal=60 stop_all=1
+  disc_L64 10/60  elapsed=0.8s
+  disc_L64 20/60  elapsed=0.9s
+  disc_L64 30/60  elapsed=1.6s
+  disc_L64 40/60  elapsed=1.7s
+  disc_L64 50/60  elapsed=2.2s
+  disc_L64 60/60  elapsed=2.4s
+done disc_L64 mean=0.977453 se=0.00192 n=60 discarded=0 extended=0 censored=0 time=2.4s
+start cyl_A8 L=24.0 n_insert=34560 nreal=100 stop_all=0
+  cyl_A8 10/100  elapsed=0.2s
+  cyl_A8 20/100  elapsed=0.3s
+  cyl_A8 30/100  elapsed=0.4s
+  cyl_A8 40/100  elapsed=0.4s
+  cyl_A8 50/100  elapsed=0.5s
+  cyl_A8 60/100  elapsed=0.6s
+  cyl_A8 70/100  elapsed=0.7s
+  cyl_A8 80/100  elapsed=0.9s
+  cyl_A8 90/100  elapsed=0.9s
+  cyl_A8 100/100  elapsed=1.1s
+done cyl_A8 mean=0.128845 se=0.000743 n=100 discarded=0 extended=0 censored=0 time=1.1s
+start cyl_A50 L=24.0 n_insert=34560 nreal=100 stop_all=0
+  cyl_A50 10/100  elapsed=0.4s
+  cyl_A50 20/100  elapsed=0.7s
+  cyl_A50 30/100  elapsed=0.9s
+  cyl_A50 40/100  elapsed=1.0s
+  cyl_A50 50/100  elapsed=1.2s
+  cyl_A50 60/100  elapsed=1.5s
+  cyl_A50 70/100  elapsed=1.7s
+  cyl_A50 80/100  elapsed=1.8s
+  cyl_A50 90/100  elapsed=2.0s
+  cyl_A50 100/100  elapsed=2.3s
+done cyl_A50 mean=0.0273719 se=0.000141 n=100 discarded=0 extended=0 censored=0 time=2.3s
+start stack3_A60 L=24.0 n_insert=34560 nreal=100 stop_all=0
+  stack3_A60 10/100  elapsed=0.5s
+  stack3_A60 20/100  elapsed=0.6s
+  stack3_A60 30/100  elapsed=0.8s
+  stack3_A60 40/100  elapsed=0.9s
+  stack3_A60 50/100  elapsed=1.2s
+  stack3_A60 60/100  elapsed=1.4s
+  stack3_A60 70/100  elapsed=1.6s
+  stack3_A60 80/100  elapsed=1.8s
+  stack3_A60 90/100  elapsed=2.0s
+  stack3_A60 100/100  elapsed=2.2s
+done stack3_A60 mean=0.0636577 se=0.000293 n=100 discarded=0 extended=0 censored=0 time=2.2s
+start lognormal0.4_A80 L=24.0 n_insert=34560 nreal=100 stop_all=0
+  lognormal0.4_A80 10/100  elapsed=15.8s
+  lognormal0.4_A80 20/100  elapsed=17.1s
+  lognormal0.4_A80 30/100  elapsed=31.4s
+  lognormal0.4_A80 40/100  elapsed=33.7s
+  lognormal0.4_A80 50/100  elapsed=47.0s
+  lognormal0.4_A80 60/100  elapsed=50.3s
+  lognormal0.4_A80 70/100  elapsed=62.3s
+  lognormal0.4_A80 80/100  elapsed=65.7s
+  lognormal0.4_A80 90/100  elapsed=78.9s
+  lognormal0.4_A80 100/100  elapsed=80.1s
+done lognormal0.4_A80 mean=0.0135726 se=0.000103 n=100 discarded=0 extended=0 censored=0 time=80.1s
+start aligned_k6.312_ell6_A40 L=24.0 n_insert=34560 nreal=100 stop_all=0
+  aligned_k6.312_ell6_A40 10/100  elapsed=4.3s
+  aligned_k6.312_ell6_A40 20/100  elapsed=4.4s
+  aligned_k6.312_ell6_A40 30/100  elapsed=6.6s
+  aligned_k6.312_ell6_A40 40/100  elapsed=7.5s
+  aligned_k6.312_ell6_A40 50/100  elapsed=7.8s
+  aligned_k6.312_ell6_A40 60/100  elapsed=10.4s
+  aligned_k6.312_ell6_A40 70/100  elapsed=10.7s
+  aligned_k6.312_ell6_A40 80/100  elapsed=13.0s
+  aligned_k6.312_ell6_A40 90/100  elapsed=13.7s
+  aligned_k6.312_ell6_A40 100/100  elapsed=13.8s
+done aligned_k6.312_ell6_A40 mean=0.0388213 se=0.000169 n=100 discarded=0 extended=0 censored=0 time=13.8s
+start square_L32 L=32.0 n_insert=13107 nreal=150 stop_all=1
+  square_L32 10/150  elapsed=0.3s
+  square_L32 20/150  elapsed=0.4s
+  square_L32 30/150  elapsed=0.4s
+  square_L32 40/150  elapsed=0.5s
+  square_L32 50/150  elapsed=0.6s
+  square_L32 60/150  elapsed=0.7s
+  square_L32 70/150  elapsed=0.7s
+  square_L32 80/150  elapsed=0.8s
+  square_L32 90/150  elapsed=0.9s
+  square_L32 100/150  elapsed=1.0s
+  square_L32 110/150  elapsed=1.0s
+  square_L32 120/150  elapsed=1.1s
+  square_L32 130/150  elapsed=1.2s
+  square_L32 140/150  elapsed=1.2s
+  square_L32 150/150  elapsed=1.3s
+done square_L32 mean=0.876166 se=0.00266 n=150 discarded=0 extended=0 censored=0 time=1.3s
+start square_L48 L=48.0 n_insert=44236 nreal=100 stop_all=1
+  square_L48 10/100  elapsed=0.7s
+  square_L48 20/100  elapsed=0.8s
+  square_L48 30/100  elapsed=1.1s
+  square_L48 40/100  elapsed=1.5s
+  square_L48 50/100  elapsed=1.7s
+  square_L48 60/100  elapsed=1.9s
+  square_L48 70/100  elapsed=2.2s
+  square_L48 80/100  elapsed=2.4s
+  square_L48 90/100  elapsed=2.7s
+  square_L48 100/100  elapsed=2.9s
+done square_L48 mean=0.880217 se=0.00175 n=100 discarded=0 extended=0 censored=0 time=2.9s
+start triangle_L32 L=32.0 n_insert=13107 nreal=150 stop_all=1
+  triangle_L32 10/150  elapsed=0.3s
+  triangle_L32 20/150  elapsed=0.3s
+  triangle_L32 30/150  elapsed=0.5s
+  triangle_L32 40/150  elapsed=0.5s
+  triangle_L32 50/150  elapsed=0.7s
+  triangle_L32 60/150  elapsed=0.8s
+  triangle_L32 70/150  elapsed=0.9s
+  triangle_L32 80/150  elapsed=0.9s
+  triangle_L32 90/150  elapsed=1.0s
+  triangle_L32 100/150  elapsed=1.1s
+  triangle_L32 110/150  elapsed=1.2s
+  triangle_L32 120/150  elapsed=1.3s
+  triangle_L32 130/150  elapsed=1.4s
+  triangle_L32 140/150  elapsed=1.5s
+  triangle_L32 150/150  elapsed=1.6s
+done triangle_L32 mean=0.749215 se=0.00243 n=150 discarded=0 extended=0 censored=0 time=1.6s
+start triangle_L48 L=48.0 n_insert=44236 nreal=100 stop_all=1
+  triangle_L48 10/100  elapsed=0.8s
+  triangle_L48 20/100  elapsed=1.0s
+  triangle_L48 30/100  elapsed=1.5s
+  triangle_L48 40/100  elapsed=1.7s
+  triangle_L48 50/100  elapsed=2.1s
+  triangle_L48 60/100  elapsed=2.3s
+  triangle_L48 70/100  elapsed=2.8s
+  triangle_L48 80/100  elapsed=3.1s
+  triangle_L48 90/100  elapsed=3.5s
+  triangle_L48 100/100  elapsed=3.8s
+done triangle_L48 mean=0.75176 se=0.00158 n=100 discarded=0 extended=0 censored=0 time=3.8s
+start spheroid1000_L32 L=32.0 n_insert=13107 nreal=100 stop_all=0
+  spheroid1000_L32 10/100  elapsed=1.9s
+  spheroid1000_L32 20/100  elapsed=3.0s
+  spheroid1000_L32 30/100  elapsed=3.9s
+  spheroid1000_L32 40/100  elapsed=4.4s
+  spheroid1000_L32 50/100  elapsed=5.7s
+  spheroid1000_L32 60/100  elapsed=6.7s
+  spheroid1000_L32 70/100  elapsed=7.4s
+  spheroid1000_L32 80/100  elapsed=8.1s
+  spheroid1000_L32 90/100  elapsed=9.1s
+  spheroid1000_L32 100/100  elapsed=10.6s
+done spheroid1000_L32 mean=0.977511 se=0.00368 n=100 discarded=0 extended=0 censored=0 time=10.7s
+start spheroid1000_L48 L=48.0 n_insert=44236 nreal=60 stop_all=0
+  spheroid1000_L48 10/60  elapsed=5.7s
+  spheroid1000_L48 20/60  elapsed=9.6s
+  spheroid1000_L48 30/60  elapsed=12.8s
+  spheroid1000_L48 40/60  elapsed=14.7s
+  spheroid1000_L48 50/60  elapsed=18.4s
+  spheroid1000_L48 60/60  elapsed=22.1s
+done spheroid1000_L48 mean=0.978341 se=0.00271 n=60 discarded=0 extended=0 censored=0 time=22.1s
+wrote results.json in 232.9s
+FORMAT OK
+validator exit 0

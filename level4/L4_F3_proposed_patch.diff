@@ -1,0 +1,11 @@
+--- review_work/code_copy/literature_checks/sim2e.py	2026-10-25 20:17:28.130237025 +0000
++++ fixtest/code_copy/literature_checks/sim2e.py	2026-10-25 20:20:24.936681473 +0000
+@@ -255,7 +255,7 @@
+     cnt = 0
+     for k in range(nv):
+         k2 = (k + 1) % nv
+-        if (s[k] <= 0) != (s[k2] <= 0):
++        if ((s[k] <= 0) != (s[k2] <= 0)) or ((s[k] >= 0) != (s[k2] >= 0)):
+             f = s[k] / (s[k] - s[k2])
+             t = 0.0
+             for q in range(3):

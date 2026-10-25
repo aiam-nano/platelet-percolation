@@ -7,3 +7,6 @@ code/test_report.json
 *.nbi
 *.nbc
 .DS_Store
+code/exam_B/truth_sealed_B.json
+code/exam_B/truth_B_raw.pkl
+*.orig

@@ -4,15 +4,15 @@ Working note for the authors. Nothing here has been done unless it is marked don
 
 ## Where things stand
 
-v0.1.0 (25 October 2026) is a private, pre-freeze snapshot of the simulator, the law, the calibration, the regression suite, the verification scripts and the reproduction note. It has no licence and no DOI.
+v0.1.0 (25 October 2026) was a private, pre-freeze snapshot; v0.1.1 (the same day) adds the Level 3 and Level 4 records and the polygon-contact correction; v0.1.2 (the same night) adds the offset diagnostics, the stacked-ripple mesh test, the Level 3 input arrays and Exam B. It is a private, pre-freeze snapshot of the simulator, the law, the calibration, the regression suite, the verification scripts and the reproduction note. It has no licence and no DOI.
 
 ## Before the freeze (v0.x)
 
-Settle the Level 4 findings and the human review, and fix or record each as an accepted limitation. Decide how to state the 0.4 to 0.7 per cent ripple-contact bias and whether to refit the ripple constant at a finer mesh. Test layered ripple stacks, or state that they are out of scope. Add the Level 3 record under `level3/`: the code-free specification, the cases, the input files, the validation script, Grok's code and report, and the comparison output. The held-back reference arrays and the comparison script can be published once Level 3 has been accepted. Decide the freeze date and record it in `CHANGELOG.md`.
+Level 4 is settled (see `docs/16_Level4_Dispositions_25Oct.md`); the independent human review is still to be done. Decide how to state the 0.4 to 0.7 per cent ripple-contact bias and whether to refit the ripple constant at a finer mesh. The layered ripple stacks have been tested against an independent mesh (Supplementary Note 3 of the paper): the stack contact agrees to a few tenths of a per cent; the modelling choice of vertical offsets is not independently tested. The Level 3 record is in `level3/` with its input arrays. Redact local file paths from the two session transcripts before the public release: `python3 tools/redact_transcripts.py` is a dry run that reports 4 replacements in each, and `--write` applies them (keeping `.orig` copies, which must not be committed). Decide the freeze date and record it in `CHANGELOG.md`.
 
 ## At the freeze (v1.0.0-rc1)
 
-Rebuild the checksums. Generate a fresh sealed exam: commit its SHA-256 only, keep the truth file out of the repository until the predictions have been scored, and then add it. Re-run every number that appears in the paper from a clean clone and record the commit and the environment against it. Review `docs/` and rewrite the working documents as a single reproduction note.
+Rebuild the checksums. Exam B is already designed, its predictions are filed and its truth is sealed (`code/exam_B/`); its truth file is held outside the repository and is added after scoring. If the law, the simulator or the exam specification changes after the human review, the predictions must be re-filed (and the truth re-simulated if the simulator changed), as `code/exam_B/criteria.md` explains. Re-run every number that appears in the paper from a clean clone and record the commit and the environment against it. Review `docs/` and rewrite the working documents as a single reproduction note.
 
 ## At submission (v1.0.0)
 

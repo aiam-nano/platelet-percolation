@@ -1,0 +1,39 @@
+1. Estimator: mean, median, and Poisson-ensemble 50 per cent crossing of the same sequential realisations
+   (the Poisson ensemble has a fluctuating particle number; P(wrap at mean density) = mean_i P(Poisson(N) >= N_i))
+   L=    8 n= 300  mean 1.0032+-0.0077  median 1.0063  Poisson-crossing 1.0040   (sd of single realisation 0.133, Poisson sd of N/N 0.0903)
+   L=   12 n= 300  mean 0.9851+-0.0056  median 0.9902  Poisson-crossing 0.9878   (sd of single realisation 0.097, Poisson sd of N/N 0.0496)
+   L=   16 n= 300  mean 0.9770+-0.0042  median 0.9848  Poisson-crossing 0.9825   (sd of single realisation 0.072, Poisson sd of N/N 0.0324)
+   L=   24 n= 300  mean 0.9807+-0.0026  median 0.9831  Poisson-crossing 0.9826   (sd of single realisation 0.045, Poisson sd of N/N 0.0176)
+   L=   32 n= 300  mean 0.9772+-0.0020  median 0.9819  Poisson-crossing 0.9809   (sd of single realisation 0.035, Poisson sd of N/N 0.0114)
+   L=   48 n= 300  mean 0.9756+-0.0013  median 0.9775  Poisson-crossing 0.9771   (sd of single realisation 0.022, Poisson sd of N/N 0.0062)
+   L=   64 n= 150  mean 0.9782+-0.0013  median 0.9793  Poisson-crossing 0.9788   (sd of single realisation 0.016, Poisson sd of N/N 0.0040)
+   L=   96 n=  60  mean 0.9783+-0.0013  median 0.9790  Poisson-crossing 0.9789   (sd of single realisation 0.010, Poisson sd of N/N 0.0022)
+   L=  128 n=  90  mean 0.9776+-0.0007  median 0.9777  Poisson-crossing 0.9780   (sd of single realisation 0.007, Poisson sd of N/N 0.0014)
+   L=  192 n=  40  mean 0.9778+-0.0009  median 0.9791  Poisson-crossing 0.9788   (sd of single realisation 0.006, Poisson sd of N/N 0.0008)
+   weighted over L>=32, mean             : 0.9775  (+1.68% against 0.9614)
+   weighted over L>=32, median           : 0.9786  (+1.79% against 0.9614)
+   weighted over L>=32, Poisson crossing : 0.9784  (+1.77% against 0.9614)
+   Result: switching to a Poisson number of particles, or to the median, moves the plateau by well under 0.5 per cent; it cannot account for 1.6 per cent.
+
+2. Crossing of the wrapping-probability curves of two box sizes (no extrapolation in L)
+   L= 16 and  32: crossing 0.9783  bootstrap 0.9781 +- 0.0085  (400/400 resolved)
+   L= 24 and  48: crossing 0.9705  bootstrap 0.9702 +- 0.0057  (398/400 resolved)
+   L= 32 and  64: crossing 0.9770  bootstrap 0.9767 +- 0.0025  (400/400 resolved)
+   L= 48 and  96: crossing 0.9798  bootstrap 0.9800 +- 0.0039  (400/400 resolved)
+   L= 32 and  48: crossing 0.9710  bootstrap 0.9702 +- 0.0053  (400/400 resolved)
+   L= 48 and  64: crossing 0.9805  bootstrap 0.9802 +- 0.0050  (391/400 resolved)
+   Crossings are noisy (the curves are nearly parallel at these sizes) but sit at 0.97 to 0.98, not near 0.9614.
+
+3. Can a slow finite-size trend hide 0.9614?  Fit eta(L) = eta_inf + a L^-p to the means, L >= 12
+   free eta_inf, a, p: eta_inf 0.9776+-0.0004, p 32.66, chi2 4.4 for 6 dof
+   eta_inf fixed at 0.9614: best a 0.017, p 0.00, chi2 6.2 for 7 dof
+   eta_inf fixed at 0.9770 with the 3D exponent 1/nu = 1.141: a 0.063, chi2 6.1 for 8 dof
+
+4. Single-axis wrapping (the periodic analogue of spanning in one direction)
+   L= 16: any 0.9758  x 1.0272  y 1.0309  z 1.0339
+   L= 24: any 0.9795  x 1.0090  y 1.0081  z 1.0130
+   L= 96: any 0.9758  x 0.9835  y 0.9836  z 0.9809
+   Extrapolation of the single-axis values in 1/L (axes_fss_fit.log) gives 0.9756 +- 0.0012, 1.5 per cent above 0.9614.
+
+5. Tangent contacts: discs with radius scaled by 1 +- 1e-9 give identical first-wrap indices
+   0 of 40 configurations differ.

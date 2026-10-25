@@ -1,0 +1,108 @@
+{
+ "disc": {
+  "L": 24.0,
+  "nreal": 100,
+  "mean": 0.9851626106131255,
+  "se": 0.004251506604058718,
+  "quantity": "eta = (4pi/3) n R^3"
+ },
+ "cyl_A8": {
+  "L": 24.0,
+  "nreal": 100,
+  "mean": 0.12927765125164378,
+  "se": 0.0007231930448859724,
+  "quantity": "n*V (nominal volume fraction)"
+ },
+ "cyl_A50": {
+  "L": 24.0,
+  "nreal": 100,
+  "mean": 0.02759865511511679,
+  "se": 0.00015296480462186323,
+  "quantity": "n*V (nominal volume fraction)"
+ },
+ "lognormal0.4_A80": {
+  "L": 24.0,
+  "nreal": 100,
+  "mean": 0.013478774088453445,
+  "se": 9.285290750795763e-05,
+  "quantity": "n*V (nominal volume fraction)"
+ },
+ "stack3_A60": {
+  "L": 24.0,
+  "nreal": 100,
+  "mean": 0.06315069381926305,
+  "se": 0.00028930983049146907,
+  "quantity": "n*V (nominal volume fraction)"
+ },
+ "aligned_k6.312_ell6_A40": {
+  "L": 24.0,
+  "nreal": 100,
+  "mean": 0.03902197142326749,
+  "se": 0.00020756930604285775,
+  "quantity": "n*V (nominal volume fraction)"
+ },
+ "disc_L32_highprecision": {
+  "L": 32.0,
+  "nreal": 300,
+  "mean": 0.9772,
+  "se": 0.002,
+  "sys": 0.002,
+  "quantity": "eta = (4pi/3) n R^3 (from fss_thin.json)"
+ },
+ "disc_plateau_L48_L64_pooled": {
+  "L": "48 and 64 pooled",
+  "nreal": "see fss logs",
+  "mean": 0.9769,
+  "se": 0.00092,
+  "sys": 0.002,
+  "quantity": "eta; inverse-variance pooled reference from L=48 (300 reals) and L=64 (150 reals)"
+ },
+ "square_L32": {
+  "L": 32,
+  "nreal": 300,
+  "mean": 0.8788499774185391,
+  "se": 0.0018834513844879523,
+  "sys": 0.002,
+  "quantity": "eta; from literature_checks/shape_fss.jsonl (sim2e mode 4, seed 5032)"
+ },
+ "square_L48": {
+  "L": 48,
+  "nreal": 150,
+  "mean": 0.8773774189889503,
+  "se": 0.0016276487221710068,
+  "sys": 0.002,
+  "quantity": "eta; from literature_checks/shape_fss.jsonl (sim2e mode 4, seed 5048)"
+ },
+ "triangle_L32": {
+  "L": 32,
+  "nreal": 300,
+  "mean": 0.7495221877207728,
+  "se": 0.0015965267852137762,
+  "sys": 0.002,
+  "quantity": "eta; from literature_checks/shape_fss.jsonl (sim2e mode 4, seed 5032)"
+ },
+ "triangle_L48": {
+  "L": 48,
+  "nreal": 150,
+  "mean": 0.7491136469732832,
+  "se": 0.001383776101913132,
+  "sys": 0.002,
+  "quantity": "eta; from literature_checks/shape_fss.jsonl (sim2e mode 4, seed 5048)"
+ },
+ "spheroid1000_L32": {
+  "L": 32,
+  "nreal": 150,
+  "mean": 0.9773707457320434,
+  "se": 0.00265872890257307,
+  "sys": 0.002,
+  "quantity": "eta; from literature_checks/ell_fss.jsonl (sim2e mode 3, seed 9032)"
+ },
+ "spheroid1000_L48": {
+  "L": 48,
+  "nreal": 80,
+  "mean": 0.9809949173786814,
+  "se": 0.0022772354430350217,
+  "sys": 0.002,
+  "quantity": "eta; from literature_checks/ell_fss.jsonl (sim2e mode 3, seed 9048)"
+ }
+}

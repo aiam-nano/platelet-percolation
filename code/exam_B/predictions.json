@@ -1,0 +1,59 @@
+{
+ "filed": "2026-10-25 21:10:15 UTC",
+ "hashes": {
+  "spec": "4766a09ada2485c6ad5ad1b2f128c399f9cb3c83d201a5c8731e4be2b1aa415d",
+  "finallaw3": "0afb377f09358d5e8373f2c67094055e9e4fdb08aaed3f5af4475b0361f067ba",
+  "mylaw": "f9dac6bf1dcdc5aa5c62d409b0374bbbaf073912b82f3e1d6826a1d53fabdc1d",
+  "align": "9192d20542bf11b30ed69bf66c1a78be73609aab8ac07b1202cc3b9416cb0d4b"
+ },
+ "S_local_measured_on_generator": {
+  "0.5": 0.16622442748938634,
+  "0.6": 0.23937076073343466
+ },
+ "predictions": {
+  "G1": {
+   "law_nominal_volume_fraction": 0.013967317420553437,
+   "law_occupied_fraction": 0.013870226999149415,
+   "S_used": 0.0
+  },
+  "G2": {
+   "law_nominal_volume_fraction": 0.09147404841485288,
+   "law_occupied_fraction": 0.08741500112798994,
+   "S_used": 0.0
+  },
+  "G3": {
+   "law_nominal_volume_fraction": 0.0298523841282289,
+   "law_occupied_fraction": 0.02941120271431008,
+   "S_used": 0.0
+  },
+  "G4": {
+   "law_nominal_volume_fraction": 0.047868346233352226,
+   "law_occupied_fraction": 0.04674072100874693,
+   "S_used": 0.0
+  },
+  "G5": {
+   "law_nominal_volume_fraction": 0.015520448450453934,
+   "law_occupied_fraction": 0.015400626985614285,
+   "S_used": 0.16622442748938634
+  },
+  "G6": {
+   "law_nominal_volume_fraction": 0.08956370294515799,
+   "law_occupied_fraction": 0.08566998224591749,
+   "S_used": 0.23937076073343466
+  },
+  "G7": {
+   "law_nominal_volume_fraction": 0.014934104950759475,
+   "law_occupied_fraction": 0.014823144258367171,
+   "S_used": 0.16622442748938634
+  },
+  "G8": {
+   "law_ratio": 1.3796223728042958
+  },
+  "G9": {
+   "law_ratio": 1.1014144361278142
+  },
+  "G10": {
+   "law_ratio": 1.215856626325779
+  }
+ }
+}

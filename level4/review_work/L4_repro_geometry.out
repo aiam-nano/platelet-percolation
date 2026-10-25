@@ -1,0 +1,122 @@
+
+========================================================================
+cell list versus all pairs
+========================================================================
+mono L32 N400: N=400 ncell=15 cs=2.133 2*bmax=2.000 pairs 72 missed 0 extra 0  T5-big-particles 0
+broad L48 cap3: N=500 ncell=8 cs=6.000 2*bmax=5.512 pairs 51 missed 0 extra 0  T5-big-particles 0
+boundary L30: N=300 ncell=12 cs=2.500 2*bmax=2.399 pairs 30 missed 0 extra 0  T5-big-particles 0
+
+========================================================================
+minimum-image double contact, two large discs
+========================================================================
+near 3.0 far 7.0 Rsum 8.0  first_perc -> -1 ( -1 means no wrap detected )
+disc near contact True
+disc far  contact True
+
+========================================================================
+winding versus supercell
+========================================================================
+  trial 0: sim -1 supercell -1 OK
+  trial 1: sim -1 supercell -1 OK
+  trial 2: sim -1 supercell -1 OK
+  trial 3: sim -1 supercell -1 OK
+  trial 4: sim -1 supercell -1 OK
+  trial 5: sim -1 supercell -1 OK
+  trial 6: sim -1 supercell -1 OK
+  trial 7: sim -1 supercell -1 OK
+mismatches 0/8
+
+========================================================================
+crafted double-offset wrap
+========================================================================
+crafted chain sim 4 supercell 4
+two large discs sim -1 supercell 2
+
+========================================================================
+invariance
+========================================================================
+base Nc -1  translate -1  rot90 -1  disc swap mismatches 0/2000
+reversed insertion order Nc -1 (base -1); difference is the estimator, not a contact change
+
+========================================================================
+disc degenerates
+========================================================================
+  coplanar overlap: got True expect True OK
+  coplanar edge: got False expect False OK
+  coplanar just inside: got True expect True OK
+  parallel gap: got False expect False OK
+  antiparallel overlap: got True expect True OK
+  perpendicular overlap: got True expect True OK
+  near-parallel intersect: got True expect True OK
+  below cutoff coplanar overlap: got True expect True OK
+  below cutoff tiny gap: got False expect False OK
+
+========================================================================
+GJK sphere (R=h) versus centre distance
+========================================================================
+sphere mismatches 0/3000
+
+========================================================================
+GJK cylinder support and overlap oracle
+========================================================================
+cylinder support disagreements 0
+parallel cylinders, gap from -0.05 to 0.05 (negative = overlap)
+  h=0.001  gap=-0.0500 gjk=True
+  h=0.001  gap=-0.0100 gjk=True
+  h=0.001  gap=-0.0001 gjk=True
+  h=0.001  gap=+0.0000 gjk=True
+  h=0.001  gap=+0.0001 gjk=False
+  h=0.001  gap=+0.0100 gjk=False
+  h=0.001  gap=+0.0500 gjk=False
+  h=0.2    gap=-0.0500 gjk=True
+  h=0.2    gap=-0.0100 gjk=True
+  h=0.2    gap=-0.0001 gjk=True
+  h=0.2    gap=+0.0000 gjk=True
+  h=0.2    gap=+0.0001 gjk=False
+  h=0.2    gap=+0.0100 gjk=False
+  h=0.2    gap=+0.0500 gjk=False
+  h=2.0    gap=-0.0500 gjk=True
+  h=2.0    gap=-0.0100 gjk=True
+  h=2.0    gap=-0.0001 gjk=True
+  h=2.0    gap=+0.0000 gjk=True
+  h=2.0    gap=+0.0001 gjk=False
+  h=2.0    gap=+0.0100 gjk=False
+  h=2.0    gap=+0.0500 gjk=False
+cylinder oracle mismatches 0 in 187 (optimizer failed 13); swap mismatches 0/200
+
+========================================================================
+spheroid h=0.001 and support
+========================================================================
+spheroid support disagreements 0
+spheroid h=0.001 vs disc mismatches 0/1500
+face-on centres 0.01 apart along normal, h=0.001 (overlap expected) True
+face-on centres 0.01 apart (separated) False
+edge-on centres 1.5 apart (overlap) True
+edge-on centres 2.1 apart (separated) False
+
+========================================================================
+polygons
+========================================================================
+square area 3.1415926535897927
+triangle area 3.141592653589793
+square random vs independent: mismatches 0/2000 (703 code contacts)
+coplanar overlap code False independent True
+vertex-in-plane, polygon on + side: code True indep False
+   positions [[-1.1634 -1.2247  0.537 ]
+ [ 0.      0.      0.    ]
+ [-1.0194  1.2729  0.6945]
+ [-2.1827  0.0482  1.2315]]
+vertex-in-plane, polygon on - side: code False indep False
+   positions [[ 1.0194 -1.2729 -0.6945]
+ [ 2.1827 -0.0482 -1.2315]
+ [ 1.1634  1.2247 -0.537 ]
+ [ 0.      0.      0.    ]]
+edge-in-plane z values [0.      0.      1.77245 1.77245]
+edge-in-plane code True indep True
+edge other side z [-1.77245 -1.77245  0.       0.     ] code False indep True
+
+DONE
+
+real	0m37.046s
+user	0m33.946s
+sys	0m1.966s

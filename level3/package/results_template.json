@@ -1,0 +1,166 @@
+{
+ "implementation": {
+  "language": "",
+  "rng": "",
+  "seeds": "",
+  "runtime_seconds": 0,
+  "notes": ""
+ },
+ "pairs": {
+  "disc": [],
+  "cyl": [],
+  "square": [],
+  "triangle": [],
+  "spheroid": []
+ },
+ "configs": {
+  "m0_t0.0": [],
+  "m1_t0.25": [],
+  "m1_t0.05": [],
+  "sq_L8": [],
+  "tri_L8": [],
+  "sph_L8": []
+ },
+ "stats": {
+  "disc": {
+   "mean": 0.0,
+   "se": 0.0,
+   "nreal": 0,
+   "discarded": 0
+  },
+  "disc_L32": {
+   "mean": 0.0,
+   "se": 0.0,
+   "nreal": 0,
+   "discarded": 0
+  },
+  "disc_L48": {
+   "mean": 0.0,
+   "se": 0.0,
+   "nreal": 0,
+   "discarded": 0
+  },
+  "disc_L64": {
+   "mean": 0.0,
+   "se": 0.0,
+   "nreal": 0,
+   "discarded": 0
+  },
+  "cyl_A8": {
+   "mean": 0.0,
+   "se": 0.0,
+   "nreal": 0,
+   "discarded": 0
+  },
+  "cyl_A50": {
+   "mean": 0.0,
+   "se": 0.0,
+   "nreal": 0,
+   "discarded": 0
+  },
+  "stack3_A60": {
+   "mean": 0.0,
+   "se": 0.0,
+   "nreal": 0,
+   "discarded": 0
+  },
+  "lognormal0.4_A80": {
+   "mean": 0.0,
+   "se": 0.0,
+   "nreal": 0,
+   "discarded": 0
+  },
+  "aligned_k6.312_ell6_A40": {
+   "mean": 0.0,
+   "se": 0.0,
+   "nreal": 0,
+   "discarded": 0
+  },
+  "square_L32": {
+   "mean": 0.0,
+   "se": 0.0,
+   "nreal": 0,
+   "discarded": 0
+  },
+  "square_L48": {
+   "mean": 0.0,
+   "se": 0.0,
+   "nreal": 0,
+   "discarded": 0
+  },
+  "triangle_L32": {
+   "mean": 0.0,
+   "se": 0.0,
+   "nreal": 0,
+   "discarded": 0
+  },
+  "triangle_L48": {
+   "mean": 0.0,
+   "se": 0.0,
+   "nreal": 0,
+   "discarded": 0
+  },
+  "spheroid1000_L32": {
+   "mean": 0.0,
+   "se": 0.0,
+   "nreal": 0,
+   "discarded": 0
+  },
+  "spheroid1000_L48": {
+   "mean": 0.0,
+   "se": 0.0,
+   "nreal": 0,
+   "discarded": 0
+  }
+ },
+ "raw": {
+  "disc": {
+   "N_any": [],
+   "N_x": [],
+   "N_y": [],
+   "N_z": []
+  },
+  "disc_L32": {
+   "N_any": [],
+   "N_x": [],
+   "N_y": [],
+   "N_z": []
+  },
+  "disc_L48": {
+   "N_any": [],
+   "N_x": [],
+   "N_y": [],
+   "N_z": []
+  },
+  "disc_L64": {
+   "N_any": [],
+   "N_x": [],
+   "N_y": [],
+   "N_z": []
+  },
+  "square_L32": {
+   "N_any": [],
+   "N_x": [],
+   "N_y": [],
+   "N_z": []
+  },
+  "square_L48": {
+   "N_any": [],
+   "N_x": [],
+   "N_y": [],
+   "N_z": []
+  },
+  "triangle_L32": {
+   "N_any": [],
+   "N_x": [],
+   "N_y": [],
+   "N_z": []
+  },
+  "triangle_L48": {
+   "N_any": [],
+   "N_x": [],
+   "N_y": [],
+   "N_z": []
+  }
+ }
+}

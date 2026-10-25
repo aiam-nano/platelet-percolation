@@ -20,3 +20,7 @@ jobs:
       - name: sim2e.py reproduces sim2.py on the shared contact modes
         working-directory: code/literature_checks
         run: PYTHONPATH=..:. python regress_sim2e.py
+      - name: Polygon contact, degenerate and random cases
+        run: python tests/test_polygon_contact.py
+      - name: Level 3 inputs and references regenerate bit for bit
+        run: python tests/verify_level3_inputs.py

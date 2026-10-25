@@ -1,0 +1,23 @@
+{
+ "name": "Exam B (fresh sealed exam, drawn up after the verification runs and before the freeze review)",
+ "date_designed": "25 October 2026",
+ "conventions": {
+  "truth_quantity_random_and_aligned": "occupied volume fraction 1 - exp(-x), x = mean over realisations of n_c * V_particle at the first non-zero winding, divided by 1.015 (box side 32 radii, 2.5 particles per unit volume offered, 48 realisations)",
+  "truth_quantity_ripple": "ratio of the mean critical number density of rippled sheets to that of flat sheets of the same material area, same configurations (paired), box side 32 radii, 48 realisations, radius cap 6",
+  "law_input_for_aligned": "S is the mean second Legendre polynomial of the angle between the normals of particle pairs whose centres lie within two radii, measured on the generator by the same procedure as in code/harness/score_finallaw_exam.py (shell_P2 within 2R, box 36, correlation length ell = 6, six seeds); d = 6 radii; the director order S_dir is only the generator setting",
+  "law": "code/finallaw3.py with mylaw.py as filed in this repository at the commit named in predictions.json",
+  "outside_the_law": "none of the ten cases lies outside the stated domain of the law (aspect ratio 8 to 1000, sigma up to 0.5 except G4 at 0.6, ripple slope up to 3, domain 2 to 8 radii)"
+ },
+ "cases": {
+  "G1":  {"kind": "threshold", "A": 100, "N": 1, "sig": 0.0, "S_dir": 0.0, "note": "thin monodisperse random"},
+  "G2":  {"kind": "threshold", "A": 25,  "N": 2, "sig": 0.0, "S_dir": 0.0, "note": "thick stack, random"},
+  "G3":  {"kind": "threshold", "A": 120, "N": 4, "sig": 0.5, "S_dir": 0.0, "note": "tactoids and log-normal radii together"},
+  "G4":  {"kind": "threshold", "A": 15,  "N": 1, "sig": 0.6, "S_dir": 0.0, "note": "width 0.6 is above the largest width (0.5) used in calibration: an extrapolation"},
+  "G5":  {"kind": "threshold", "A": 100, "N": 1, "sig": 0.0, "S_dir": 0.5, "note": "aligned, thin"},
+  "G6":  {"kind": "threshold", "A": 30,  "N": 2, "sig": 0.0, "S_dir": 0.6, "note": "aligned, thick stack"},
+  "G7":  {"kind": "threshold", "A": 80,  "N": 1, "sig": 0.4, "S_dir": 0.5, "note": "aligned with polydispersity"},
+  "G8":  {"kind": "ripple_ratio", "a": 2.0, "lam": 0.8, "sig": 0.0, "note": "ripple, monodisperse"},
+  "G9":  {"kind": "ripple_ratio", "a": 0.8, "lam": 1.5, "sig": 0.3, "note": "weak long-wave ripple, polydisperse"},
+  "G10": {"kind": "ripple_ratio", "a": 2.5, "lam": 1.2, "sig": 0.2, "note": "steep ripple"}
+ }
+}

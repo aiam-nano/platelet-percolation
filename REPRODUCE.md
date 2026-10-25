@@ -18,6 +18,10 @@ Environment: `ENVIRONMENT.txt`. The first call of each numba function compiles i
 
 `code/gap_tests/gap_preds.py` wrote the predictions (`gap_preds.json`) before the simulations; the drivers `gap_cyl.py`, `gap_rip.py`, `gap_slab.py` and `gap_field.py` produce the `.pkl` results and `gap_score.py` scores them (22 of 24 inside their windows). `code/exam_sim.py` regenerates the exam truth from the seeds in the script; the truth file and its SHA-256 are in `code/exam/`, and `code/harness/score_finallaw_exam.py` scores the law against them. Neither needs simulation to re-score.
 
+## Exam B, the offset diagnostics and the stacked-ripple test
+
+`code/exam_B/predict_exam_B.py` writes the law's predictions for the ten cases of `spec.json` and the hashes of the law files (`predictions.json`, `predictions.sha256`); `exam_B_truth.py` simulates the truth (about 15 minutes on two cores) and writes a sealed file and its hash without printing values; `score_exam_B.py` checks every hash and scores. The truth file is not in the repository until the predictions have been scored; `criteria.md` says what counts as failure. `code/verification/offset_diagnostics.py` reruns the diagnostics of `docs/17_Offset_Diagnostics_25Oct.md` from the stored threshold files (`fss_*.json`, including the runs at 128 and 192 radii made with `fss_big.py`). `code/literature_checks/stacked_ripple_mesh_test.py 40000 7` repeats the independent mesh test for stacks of rippled sheets (about half an hour).
+
 ## What is not in this snapshot
 
-The Level 3 record, the Level 4 findings and the Co-Scientist scoring tools (see `RELEASING.md`). The simulations that produced the stored `.pkl`, `.json` and `.jsonl` files are long and were run once; the stored files are the record, and re-running should match them to within the statistical errors.
+The Co-Scientist scoring tools (see `RELEASING.md`). The Level 3 input arrays are now in `level3/`, and `tests/verify_level3_inputs.py` checks that the generator scripts reproduce them exactly. The simulations that produced the stored `.pkl`, `.json` and `.jsonl` files are long and were run once; the stored files are the record, and re-running should match them to within the statistical errors.

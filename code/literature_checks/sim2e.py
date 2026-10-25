@@ -255,7 +255,7 @@ def poly_interval(Rm, c, V, pn, pc, u, res):
     cnt = 0
     for k in range(nv):
         k2 = (k + 1) % nv
-        if (s[k] <= 0) != (s[k2] <= 0):
+        if ((s[k] <= 0) != (s[k2] <= 0)) or ((s[k] >= 0) != (s[k2] >= 0)):
             f = s[k] / (s[k] - s[k2])
             t = 0.0
             for q in range(3):
@@ -273,6 +273,44 @@ def poly_interval(Rm, c, V, pn, pc, u, res):
 
 
 @njit(cache=True)
+def poly_coplanar_overlap(RiM, dv, RjM, V, n):
+    """Overlap (positive area) of two convex polygons lying in the same plane with normal n, by the separating-axis test
+    on the edge normals of both.  Polygon i is at the origin, polygon j at dv, both with vertex list V."""
+    nv = V.shape[0]
+    XA = np.empty((nv, 3))
+    XB = np.empty((nv, 3))
+    for k in range(nv):
+        for q in range(3):
+            XA[k, q] = RiM[q, 0] * V[k, 0] + RiM[q, 1] * V[k, 1] + RiM[q, 2] * V[k, 2]
+            XB[k, q] = RjM[q, 0] * V[k, 0] + RjM[q, 1] * V[k, 1] + RjM[q, 2] * V[k, 2] + dv[q]
+    for which in range(2):
+        for k in range(nv):
+            k2 = (k + 1) % nv
+            e = np.empty(3)
+            for q in range(3):
+                e[q] = (XA[k2, q] - XA[k, q]) if which == 0 else (XB[k2, q] - XB[k, q])
+            a = cross(n, e)
+            amin = 1e300
+            amax = -1e300
+            bmin = 1e300
+            bmax = -1e300
+            for m in range(nv):
+                pa = dot(XA[m], a)
+                pb = dot(XB[m], a)
+                if pa < amin:
+                    amin = pa
+                if pa > amax:
+                    amax = pa
+                if pb < bmin:
+                    bmin = pb
+                if pb > bmax:
+                    bmax = pb
+            if amax <= bmin or bmax <= amin:
+                return False
+    return True
+
+
+@njit(cache=True)
 def poly_contact(RiM, dv, RjM, V):
     """Two zero-thickness convex polygons with identical vertex list V: i at the origin, j at dv."""
     ni = np.empty(3)
@@ -283,7 +321,10 @@ def poly_contact(RiM, dv, RjM, V):
     u = cross(ni, nj)
     us = math.sqrt(dot(u, u))
     if us < 1e-9:
-        return False
+        # parallel plates: contact only if coplanar (to 1e-9) and the two polygons overlap in the plane
+        if abs(dot(dv, ni)) > 1e-9:
+            return False
+        return poly_coplanar_overlap(RiM, dv, RjM, V, ni)
     u = u / us
     zero = np.zeros(3)
     ra = np.empty(2)
@@ -541,6 +582,8 @@ def make_sheet(kind, R0=1.0, h=None, amp=0.0, lam=1.0, Rc=1.0, nrim=48):
 
 
 def run_once(mode, pos, rot, rad, hth, L, brad, sheet=None, ncell=None):
+    if L < 4.0 * brad.max():
+        raise ValueError("box side L must be at least 4 x the largest bounding radius: contacts are recorded on the minimum image only")
     s = sheet if sheet is not None else EMPTY
     if ncell is None:
         ncell = max(3, int(L // (2 * brad.max())))

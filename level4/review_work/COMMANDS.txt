@@ -1,0 +1,42 @@
+Commands run for this review. All paths are inside review_cursor. Nothing under code/ or docs/ was modified. The copy under review_work/code_copy is what the tests imported.
+
+Python on this machine: `python` is 3.14.4, `python3` is 3.14.3. Both import numpy 2.4.4, scipy 1.17.1 and numba 0.68.0.
+
+1. Environment, from the workspace root.
+
+    python --version
+    python -c "import numpy, scipy, numba; print(numpy.__version__, scipy.__version__, numba.__version__)"
+    python3 --version
+    python3 -c "import numpy, scipy, numba; print(numpy.__version__, scipy.__version__, numba.__version__)"
+
+2. Copy the code tree. review_work/ and findings/ were created first.
+
+    Copy-Item -Recurse code review_work\code_copy
+
+3. Quick regression, from review_work/code_copy/verification. Exit 0, about 80 seconds, 14 of 14 passed. T8 is not in the quick set. The report was written to the copy, review_work/code_copy/verification/test_report.json.
+
+    python3 test_suite.py quick
+
+4. Law, exam, gap, plateau and ripple checks, from review_work. Exit 0, about 29 seconds.
+
+    python test_law_docs.py
+
+5. Contact, cell-list, winding and polygon checks, from review_work. Exit 0, about 100 seconds.
+
+    python test_geometry.py
+
+6. First run of the follow-up script, from review_work. The winding, face and invariance blocks printed, then the script crashed because fss_L64.json is a bare list:
+
+    python -u test_followup.py
+
+    AttributeError: 'list' object has no attribute 'items'
+
+7. The same large-box, sphere and F5/F6 numbers, from review_work, after that crash. Exit 0.
+
+    python -u -c "<inline script: means of fss_thin.json and fss_L64/L96/L128.json, weighted means, fss_spheres.json, exam_sim.build for F5 and F6>"
+
+8. Follow-up script again, after the json loader was fixed to accept a bare list. Exit 0, 27 seconds. This is the run to repeat.
+
+    python -u test_followup.py
+
+Printed: four winding agreements (80, 91, 99, 90) and 0 mismatches; invariance thresholds all 80; 7 of 1172 face marks missed by the chord test; weighted mean L>=32 is 0.9770 ± 0.0006 and the four largest boxes are 0.9769 ± 0.0006; exact spheres L=32 is 0.3441 ± 0.0009; F5 and F6 margins of L/2 over twice the largest bounding radius are 4.151 and 4.145.
