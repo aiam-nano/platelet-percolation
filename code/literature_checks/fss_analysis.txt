@@ -1,0 +1,29 @@
+== periodic box, first wrapping cycle (any direction), zero-thickness plates ==
+disc L16:0.9839+-0.0029(n=600) L24:0.9803+-0.0022(n=400) L32:0.9765+-0.0021(n=300) L48:0.9777+-0.0017(n=150) L64:0.9765+-0.0017(n=100) L96:0.9751+-0.0017(n=40) L128:0.9778+-0.0017(n=16)
+  plateau (weighted mean, L>=32): 0.9767 +- 0.0008; fit eta_inf + a L^(-1/nu) over all L: 0.9753 +- 0.0012, a = 0.175+-0.070, chi2 = 2.9 for 5 dof
+  Yi and Tawerghi 0.9614: plateau/YT = 1.0159 +- 0.0008
+square L16:0.8802+-0.0027(n=600) L24:0.8815+-0.0020(n=400) L32:0.8788+-0.0019(n=300) L48:0.8774+-0.0016(n=150) L64:0.8808+-0.0014(n=100) L96:0.8797+-0.0015(n=40) L128:0.8798+-0.0018(n=16)
+  plateau (weighted mean, L>=32): 0.8794 +- 0.0007; fit eta_inf + a L^(-1/nu) over all L: 0.8794 +- 0.0011, a = 0.020+-0.066, chi2 = 3.6 for 5 dof
+  Yi and Tawerghi 0.8647: plateau/YT = 1.0170 +- 0.0008
+triangle L16:0.7487+-0.0024(n=600) L24:0.7485+-0.0021(n=400) L32:0.7495+-0.0016(n=300) L48:0.7491+-0.0014(n=150) L64:0.7506+-0.0012(n=100) L96:0.7496+-0.0012(n=40) L128:0.7523+-0.0011(n=16)
+  plateau (weighted mean, L>=32): 0.7505 +- 0.0006; fit eta_inf + a L^(-1/nu) over all L: 0.7512 +- 0.0008, a = -0.088+-0.057, chi2 = 3.6 for 5 dof
+  Yi and Tawerghi 0.7295: plateau/YT = 1.0287 +- 0.0008
+  ratio square/disc = 0.9004 +- 0.0010   Yi and Tawerghi: 0.8994
+  ratio triangle/disc = 0.7683 +- 0.0008   Yi and Tawerghi: 0.7588
+
+== open faces, first spanning cluster (Yi and Tawerghi style), single-axis mean and any-axis ==
+disc L24:1.0211+-0.0024 L32:1.0098+-0.0020 L48:0.9946+-0.0018 L64:0.9896+-0.0018 L96:0.9864+-0.0016
+  linear in r = 1/L (their extrapolation): eta_c = 0.9728 +- 0.0019 (chi2 3.1/3);  L^(-1/nu) fit: 0.9757 +- 0.0017 (chi2 2.3/3);  Yi and Tawerghi 0.9614
+  any-axis first-span mean: L24:0.9758 L32:0.9771 L48:0.9724 L64:0.9744 L96:0.9767
+square L24:0.9211+-0.0025 L32:0.9038+-0.0025 L48:0.8973+-0.0020 L64:0.8912+-0.0018
+  linear in r = 1/L (their extrapolation): eta_c = 0.8740 +- 0.0030 (chi2 3.4/2);  L^(-1/nu) fit: 0.8773 +- 0.0026 (chi2 3.0/2);  Yi and Tawerghi 0.8647
+  any-axis first-span mean: L24:0.8795 L32:0.8713 L48:0.8800 L64:0.8745
+triangle L24:0.7828+-0.0023 L32:0.7758+-0.0022 L48:0.7628+-0.0019 L64:0.7573+-0.0019
+  linear in r = 1/L (their extrapolation): eta_c = 0.7418 +- 0.0029 (chi2 1.4/2);  L^(-1/nu) fit: 0.7451 +- 0.0026 (chi2 1.8/2);  Yi and Tawerghi 0.7295
+  any-axis first-span mean: L24:0.7434 L32:0.7467 L48:0.7454 L64:0.7426
+
+== oblate spheroids, periodic box, first wrapping cycle ==
+u = 100 L24:0.9739+-0.0033(n=200) L32:0.9755+-0.0027(n=150) L48:0.9726+-0.0024(n=80) L64:0.9734+-0.0024(n=40) L96:0.9732+-0.0024(n=16)
+  plateau (L>=32) 0.9736 +- 0.0012;  fit eta_inf = 0.9727 +- 0.0024 (chi2 0.5/3);  vs Yi-Tawerghi 0.9614: 1.0127;  vs Garboczi 1.27: 0.7666
+u = 1000 L24:0.9806+-0.0033(n=200) L32:0.9774+-0.0027(n=150) L48:0.9810+-0.0023(n=80) L64:0.9787+-0.0027(n=40) L96:0.9789+-0.0023(n=16)
+  plateau (L>=32) 0.9791 +- 0.0012;  fit eta_inf = 0.9791 +- 0.0024 (chi2 1.3/3);  vs Yi-Tawerghi 0.9614: 1.0185;  vs Garboczi 1.27: 0.7710

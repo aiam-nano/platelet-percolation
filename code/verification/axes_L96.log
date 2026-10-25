@@ -1,0 +1,5 @@
+L=96 N_any: eta mean 0.9758 +- 0.0016  median 0.9759
+L=96 N_x  : eta mean 0.9835 +- 0.0017  median 0.9856
+L=96 N_y  : eta mean 0.9836 +- 0.0020  median 0.9874
+L=96 N_z  : eta mean 0.9809 +- 0.0018  median 0.9808
+mean over axes of N_axis: 0.9827; max over axes 0.9897

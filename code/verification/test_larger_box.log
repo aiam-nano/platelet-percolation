@@ -1,0 +1,5 @@
+thin discs, monodisperse           L=24 default ncell= 12: ncell=3 vs default first-percolation index [(3303, 3303), (3064, 3064), (3226, 3226), (3170, 3170)]  OK
+cylinders A=20, monodisperse       L=20 default ncell=  9: ncell=3 vs default first-percolation index [(1675, 1675), (1664, 1664), (1579, 1579), (1615, 1615)]  OK
+log-normal 0.3, thin cylinders     L=32 default ncell=  5: ncell=3 vs default first-percolation index [(5914, 5914), (5966, 5966), (5705, 5705), (5988, 5988)]  OK
+log-normal 0.5, thin cylinders     L=40 default ncell=  3: ncell=3 vs default first-percolation index [(7272, 7272), (6902, 6902), (7416, 7416), (7429, 7429)]  OK
+T10 PASS

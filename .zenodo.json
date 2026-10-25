@@ -1,0 +1,11 @@
+{
+  "title": "Platelet percolation simulator and calibrated multivariate threshold law",
+  "upload_type": "software",
+  "description": "Monte Carlo simulator and simulation-calibrated law for the geometric percolation threshold of penetrable platelets of finite thickness. Draft metadata; to be completed before the first public release.",
+  "creators": [
+    {"name": "Vijayaraghavan, Aravind", "affiliation": "University of Manchester"}
+  ],
+  "keywords": ["percolation", "platelets", "excluded volume", "graphene", "nanocomposites", "Monte Carlo"],
+  "access_right": "open",
+  "license": "TBD"
+}

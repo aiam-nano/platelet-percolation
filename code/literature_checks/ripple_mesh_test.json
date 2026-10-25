@@ -1,0 +1,362 @@
+[
+ {
+  "case": "flat",
+  "h_mesh": 0.05,
+  "npairs": 80000,
+  "contacts_mesh": 23286,
+  "Vex_mesh": 9.754016870865588,
+  "Vex_mesh_err": 0.05381907160697001,
+  "secs": 35,
+  "prod_h8": {
+   "contacts": 23274,
+   "prod_only": 3,
+   "mesh_only": 15,
+   "Vex": 9.748990322619845,
+   "ratio_to_mesh": 0.9994846688997682
+  },
+  "prod_h16": {
+   "contacts": 23278,
+   "prod_only": 5,
+   "mesh_only": 13,
+   "Vex": 9.75066583870176,
+   "ratio_to_mesh": 0.9996564459331788
+  },
+  "prod_h32": {
+   "contacts": 23280,
+   "prod_only": 5,
+   "mesh_only": 11,
+   "Vex": 9.751503596742717,
+   "ratio_to_mesh": 0.999742334449884
+  }
+ },
+ {
+  "case": "flat",
+  "h_mesh": 0.025,
+  "npairs": 80000,
+  "contacts_mesh": 23297,
+  "Vex_mesh": 9.758624540090853,
+  "Vex_mesh_err": 0.0538265610748195,
+  "secs": 94,
+  "prod_h8": {
+   "contacts": 23274,
+   "prod_only": 0,
+   "mesh_only": 23,
+   "Vex": 9.748990322619845,
+   "ratio_to_mesh": 0.9990127484225437
+  },
+  "prod_h16": {
+   "contacts": 23278,
+   "prod_only": 0,
+   "mesh_only": 19,
+   "Vex": 9.75066583870176,
+   "ratio_to_mesh": 0.9991844443490578
+  },
+  "prod_h32": {
+   "contacts": 23280,
+   "prod_only": 0,
+   "mesh_only": 17,
+   "Vex": 9.751503596742717,
+   "ratio_to_mesh": 0.9992702923123149
+  }
+ },
+ {
+  "case": "a1.2/lam1.0",
+  "h_mesh": 0.05,
+  "npairs": 80000,
+  "contacts_mesh": 20594,
+  "Vex_mesh": 8.626394543334676,
+  "Vex_mesh_err": 0.05179992431958079,
+  "secs": 39,
+  "prod_h8": {
+   "contacts": 20538,
+   "prod_only": 28,
+   "mesh_only": 84,
+   "Vex": 8.602937318199842,
+   "ratio_to_mesh": 0.9972807613868115
+  },
+  "prod_h16": {
+   "contacts": 20583,
+   "prod_only": 31,
+   "mesh_only": 42,
+   "Vex": 8.621786874111763,
+   "ratio_to_mesh": 0.999465863843838
+  },
+  "prod_h32": {
+   "contacts": 20604,
+   "prod_only": 36,
+   "mesh_only": 26,
+   "Vex": 8.630583333537324,
+   "ratio_to_mesh": 1.0004855783237836
+  }
+ },
+ {
+  "case": "a1.2/lam1.0",
+  "h_mesh": 0.025,
+  "npairs": 80000,
+  "contacts_mesh": 20626,
+  "Vex_mesh": 8.63979867639241,
+  "Vex_mesh_err": 0.051826189249186506,
+  "secs": 98,
+  "prod_h8": {
+   "contacts": 20538,
+   "prod_only": 16,
+   "mesh_only": 104,
+   "Vex": 8.602937322590288,
+   "ratio_to_mesh": 0.9957335401919906
+  },
+  "prod_h16": {
+   "contacts": 20583,
+   "prod_only": 17,
+   "mesh_only": 60,
+   "Vex": 8.621786878511827,
+   "ratio_to_mesh": 0.9979152525938135
+  },
+  "prod_h32": {
+   "contacts": 20604,
+   "prod_only": 15,
+   "mesh_only": 37,
+   "Vex": 8.630583337941879,
+   "ratio_to_mesh": 0.9989333850479976
+  }
+ },
+ {
+  "case": "P1,P2 a2.0/lam1.0",
+  "h_mesh": 0.05,
+  "npairs": 80000,
+  "contacts_mesh": 18510,
+  "Vex_mesh": 7.753450668441127,
+  "Vex_mesh_err": 0.049963064910167616,
+  "secs": 43,
+  "prod_h8": {
+   "contacts": 18440,
+   "prod_only": 18,
+   "mesh_only": 88,
+   "Vex": 7.724129137009962,
+   "ratio_to_mesh": 0.996218260399784
+  },
+  "prod_h16": {
+   "contacts": 18498,
+   "prod_only": 24,
+   "mesh_only": 36,
+   "Vex": 7.748424120195786,
+   "ratio_to_mesh": 0.9993517017828202
+  },
+  "prod_h32": {
+   "contacts": 18526,
+   "prod_only": 32,
+   "mesh_only": 16,
+   "Vex": 7.760152732768251,
+   "ratio_to_mesh": 1.0008643976229066
+  }
+ },
+ {
+  "case": "P1,P2 a2.0/lam1.0",
+  "h_mesh": 0.025,
+  "npairs": 80000,
+  "contacts_mesh": 18541,
+  "Vex_mesh": 7.766435918694447,
+  "Vex_mesh_err": 0.049992279246329714,
+  "secs": 108,
+  "prod_h8": {
+   "contacts": 18440,
+   "prod_only": 12,
+   "mesh_only": 113,
+   "Vex": 7.724129137626105,
+   "ratio_to_mesh": 0.994552613127663
+  },
+  "prod_h16": {
+   "contacts": 18498,
+   "prod_only": 12,
+   "mesh_only": 55,
+   "Vex": 7.748424120813866,
+   "ratio_to_mesh": 0.9976808154899952
+  },
+  "prod_h32": {
+   "contacts": 18526,
+   "prod_only": 12,
+   "mesh_only": 27,
+   "Vex": 7.760152733387267,
+   "ratio_to_mesh": 0.9991909821476727
+  }
+ },
+ {
+  "case": "P3 a1.5/lam0.7",
+  "h_mesh": 0.05,
+  "npairs": 80000,
+  "contacts_mesh": 18502,
+  "Vex_mesh": 7.750099628673848,
+  "Vex_mesh_err": 0.04995551605625889,
+  "secs": 41,
+  "prod_h8": {
+   "contacts": 18428,
+   "prod_only": 37,
+   "mesh_only": 111,
+   "Vex": 7.719102581191312,
+   "ratio_to_mesh": 0.996000432385688
+  },
+  "prod_h16": {
+   "contacts": 18493,
+   "prod_only": 44,
+   "mesh_only": 53,
+   "Vex": 7.7463297174935395,
+   "ratio_to_mesh": 0.999513566100962
+  },
+  "prod_h32": {
+   "contacts": 18547,
+   "prod_only": 61,
+   "mesh_only": 16,
+   "Vex": 7.76894918457539,
+   "ratio_to_mesh": 1.0024321694951897
+  }
+ },
+ {
+  "case": "P3 a1.5/lam0.7",
+  "h_mesh": 0.025,
+  "npairs": 80000,
+  "contacts_mesh": 18549,
+  "Vex_mesh": 7.7697869508582755,
+  "Vex_mesh_err": 0.0499998088149508,
+  "secs": 102,
+  "prod_h8": {
+   "contacts": 18428,
+   "prod_only": 23,
+   "mesh_only": 144,
+   "Vex": 7.719102589380361,
+   "ratio_to_mesh": 0.99347673729042
+  },
+  "prod_h16": {
+   "contacts": 18493,
+   "prod_only": 22,
+   "mesh_only": 78,
+   "Vex": 7.746329725711472,
+   "ratio_to_mesh": 0.9969809693244919
+  },
+  "prod_h32": {
+   "contacts": 18547,
+   "prod_only": 24,
+   "mesh_only": 26,
+   "Vex": 7.768949192817319,
+   "ratio_to_mesh": 0.9998921774758748
+  }
+ },
+ {
+  "case": "P4 a3.0/lam1.5",
+  "h_mesh": 0.05,
+  "npairs": 80000,
+  "contacts_mesh": 22404,
+  "Vex_mesh": 9.384565574784645,
+  "Vex_mesh_err": 0.053198888594899865,
+  "secs": 41,
+  "prod_h8": {
+   "contacts": 22353,
+   "prod_only": 29,
+   "mesh_only": 80,
+   "Vex": 9.363202744740278,
+   "ratio_to_mesh": 0.9977236207820032
+  },
+  "prod_h16": {
+   "contacts": 22387,
+   "prod_only": 27,
+   "mesh_only": 44,
+   "Vex": 9.377444631436523,
+   "ratio_to_mesh": 0.9992412069273344
+  },
+  "prod_h32": {
+   "contacts": 22418,
+   "prod_only": 35,
+   "mesh_only": 21,
+   "Vex": 9.390429881071334,
+   "ratio_to_mesh": 1.0006248884127833
+  }
+ },
+ {
+  "case": "P4 a3.0/lam1.5",
+  "h_mesh": 0.025,
+  "npairs": 80000,
+  "contacts_mesh": 22433,
+  "Vex_mesh": 9.39671306639731,
+  "Vex_mesh_err": 0.053219904728576975,
+  "secs": 103,
+  "prod_h8": {
+   "contacts": 22353,
+   "prod_only": 22,
+   "mesh_only": 102,
+   "Vex": 9.363202744759018,
+   "ratio_to_mesh": 0.9964338251682788
+  },
+  "prod_h16": {
+   "contacts": 22387,
+   "prod_only": 16,
+   "mesh_only": 62,
+   "Vex": 9.377444631455292,
+   "ratio_to_mesh": 0.9979494494717603
+  },
+  "prod_h32": {
+   "contacts": 22418,
+   "prod_only": 16,
+   "mesh_only": 31,
+   "Vex": 9.39042988109013,
+   "ratio_to_mesh": 0.9993313422190523
+  }
+ },
+ {
+  "case": "a2.0/lam1.0, radius ratio 0.6",
+  "h_mesh": 0.05,
+  "npairs": 80000,
+  "contacts_mesh": 17701,
+  "Vex_mesh": 3.796263700941282,
+  "Vex_mesh_err": 0.025179842866016766,
+  "secs": 43,
+  "prod_h8": {
+   "contacts": 17637,
+   "prod_only": 28,
+   "mesh_only": 92,
+   "Vex": 3.782537873199333,
+   "ratio_to_mesh": 0.9963843850629908
+  },
+  "prod_h16": {
+   "contacts": 17694,
+   "prod_only": 34,
+   "mesh_only": 41,
+   "Vex": 3.7947624385320062,
+   "ratio_to_mesh": 0.9996045421162647
+  },
+  "prod_h32": {
+   "contacts": 17729,
+   "prod_only": 43,
+   "mesh_only": 15,
+   "Vex": 3.8022687505783845,
+   "ratio_to_mesh": 1.0015818315349414
+  }
+ },
+ {
+  "case": "a2.0/lam1.0, radius ratio 0.6",
+  "h_mesh": 0.025,
+  "npairs": 80000,
+  "contacts_mesh": 17742,
+  "Vex_mesh": 3.805056809641992,
+  "Vex_mesh_err": 0.025200690857953307,
+  "secs": 119,
+  "prod_h8": {
+   "contacts": 17637,
+   "prod_only": 16,
+   "mesh_only": 121,
+   "Vex": 3.7825378735010604,
+   "ratio_to_mesh": 0.9940818397024012
+  },
+  "prod_h16": {
+   "contacts": 17694,
+   "prod_only": 16,
+   "mesh_only": 64,
+   "Vex": 3.794762438834709,
+   "ratio_to_mesh": 0.9972945552925263
+  },
+  "prod_h32": {
+   "contacts": 17729,
+   "prod_only": 16,
+   "mesh_only": 29,
+   "Vex": 3.802268750881686,
+   "ratio_to_mesh": 0.9992672753917258
+  }
+ }
+]

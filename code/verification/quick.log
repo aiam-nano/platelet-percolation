@@ -1,0 +1,14 @@
+PASS T1 disc_contact vs brute force :: 0 mismatches in 800 pairs (134 contacts)
+PASS T2 GJK thin limit vs analytic disc :: 0 mismatches in 1000 pairs (83 contacts)
+PASS T3 excluded volume vs Isihara (cylinders) :: t=0.05: MC 10.8244+-0.0242 vs 10.8422 (z=-0.7); t=0.4: MC 18.1399+-0.0303 vs 18.0900 (z=+1.6); t=1.0: MC 32.3074+-0.0434 vs 32.3056 (z=+0.0); t=2.0: MC 61.0780+-0.0863 vs 61.0247 (z=+0.6)
+PASS T4 thin-disc excluded volume = pi^2 R^3 :: MC 9.8793+-0.0189 vs 9.8696
+PASS T5 cell list completeness: monodisperse R=1 L=32 :: missed 0 of 18089 candidate pairs (ncell=16, cell size 2.00, largest brad 1.00, need >= 2.00)
+PASS T5 cell list completeness: lognormal sigma 0.5, cap 6, L=32 :: missed 0 of 26864 candidate pairs (ncell=3, cell size 10.67, largest brad 6.00, need >= 12.00)
+PASS T6 first-wrapping-cluster detector vs brute force :: 0 mismatches in 7 configurations 
+PASS T7a isotropic orientations :: <cos^2>=0.3352 (1/3), <P2>=+0.0028 (0)
+PASS T7b rotation_with_normal orthonormal, third column = normal :: max orthonormality error 6.7e-16, normal error 0.0e+00
+PASS T7c Fisher kappa=4.733 gives S=0.5 :: S=0.5007
+PASS T7c Fisher kappa=6.312 gives S=0.6 :: S=0.5999
+PASS T7d domain order parameter and isotropic bulk :: S about domain director 0.599 (0.6), bulk order eigenvalue 0.021
+
+12 of 12 tests passed

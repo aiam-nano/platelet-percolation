@@ -1,0 +1,22 @@
+name: quick-checks
+on:
+  push:
+  pull_request:
+jobs:
+  quick:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - name: Law reference values and calibration
+        run: python tests/check_reference.py
+      - name: Regression suite, quick mode (14 tests, about one minute)
+        working-directory: code
+        run: PYTHONPATH=. python verification/test_suite.py quick
+      - name: sim2e.py reproduces sim2.py on the shared contact modes
+        working-directory: code/literature_checks
+        run: PYTHONPATH=..:. python regress_sim2e.py

@@ -1,0 +1,6 @@
+lambda=1.0: eta(<R^3>)=0.9794 +- 0.0030 (n=80)
+lambda=0.5: eta(<R^3>)=0.9933 +- 0.0033 (n=80)
+lambda=0.25: eta(<R^3>)=0.9884 +- 0.0035 (n=80)
+  lambda=1.0: relative difference to equal discs = +0.00%
+  lambda=0.5: relative difference to equal discs = +1.42%
+  lambda=0.25: relative difference to equal discs = +0.93%

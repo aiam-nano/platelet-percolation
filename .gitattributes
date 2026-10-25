@@ -1,2 +1,2 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Keep every file byte-for-byte as committed (no line-ending conversion), so that CHECKSUMS.sha256 holds on Windows clones.
+* -text

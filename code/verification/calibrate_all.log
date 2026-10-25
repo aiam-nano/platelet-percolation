@@ -1,0 +1,5 @@
+B_ (baseline)                      [0.6628] +- [0.0425]  chi2    3.3 / 11 dof
+kappa (polydispersity)             [0.6248] +- [0.0319]  chi2    6.8 / 7 dof
+alignment gamma0, prefactor 0.625  [0.3923] +- [0.0578]  chi2   66.7 / 23 dof
+alignment (prefactor, gamma) free  [0.5878 0.5763] +- [0.0108 0.0752]  chi2   43.0 / 22 dof
+CRIP (ripple, thin-limit ratios)   [0.6474] +- [0.0105]  chi2  241.1 / 29 dof

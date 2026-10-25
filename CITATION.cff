@@ -1,0 +1,14 @@
+# Draft only. Authors, version, date, DOI and licence are to be decided by the authors before any public release.
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Platelet percolation simulator and calibrated multivariate threshold law"
+type: software
+version: "0.1.0"
+date-released: "TBD"
+authors:
+  - family-names: "Vijayaraghavan"
+    given-names: "Aravind"
+    affiliation: "University of Manchester"
+license: "TBD (see LICENSE_PENDING.md)"
+repository-code: "TBD"
+doi: "TBD"

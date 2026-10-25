@@ -1,0 +1,9 @@
+flat n_c=0.2352+-0.0014 n=120 [3s]
+fieldgen.py:8: RuntimeWarning: divide by zero encountered in power
+  amp=np.where(mask,q**(-p/2.0),0.0)
+fieldgen.py:8: RuntimeWarning: divide by zero encountered in power
+  amp=np.where(mask,q**(-p/2.0),0.0)
+R1 p=4 s=0.4: mean n_c 0.2503 fields=10 [6s]
+R2 p=4 s=0.8: mean n_c 0.2689 fields=10 [8s]
+R3 p=4 s=1.2: mean n_c 0.2951 fields=10 [11s]
+R4 p=2 s=0.8: mean n_c 0.2702 fields=10 [13s]
