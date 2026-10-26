@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.3 (private, pre-freeze)
+
+Licence. `LICENSE` (MIT) and `NOTICE.md` (what the licence does not cover: outputs of Google's Hypothesis Generation tool and other AI services, extracted published values, third-party software) replace `LICENSE_PENDING.md`. `CITATION.cff` and `.zenodo.json` now name the licence. No code, law, calibration or result changed.
+
 ## v0.1.2, 25 October 2026, night (private, pre-freeze)
 
 Diagnostics. `docs/17_Offset_Diagnostics_25Oct.md` and `code/verification/offset_diagnostics.py` (output `offset_diagnostics.out`): the estimator (Poisson ensemble, median), the crossing of wrapping curves, single-axis wrapping, tangent contacts and a free or fixed-limit finite-size fit all leave the thin-disc offset of 1.6 to 1.8 per cent in place. New data: 60 further realisations at 128 radii (0.9783 plus or minus 0.0010) and 40 at 192 radii (0.9778 plus or minus 0.0009), with `fss_big.py`; a slow approach to 0.9614 is excluded in practice.
