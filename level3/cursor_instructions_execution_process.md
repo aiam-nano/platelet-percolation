@@ -60,7 +60,7 @@ task_id: 629947
 title: Install numba for compiled inner loops
 tool_call_id: call-5d898344-513c-4113-95ab-b0543c81b992-15
 fc_d03312ea-ca46-974c-827d-c7db1ea51609_0
-output_path: C:\Users\mbassav2\.cursor\projects\c-Users-mbassav2-Work-Work-Current-Research-UoM-AI-Google-co-scientist-Percolation-Pilot-04-Simulation-and-analysis-reimplementation-cursor\terminals\629947.txt
+output_path: <LOCAL_PATH>
 </task>
 </system_notification>
 
@@ -76,7 +76,7 @@ title: Run geometry and wrapping self-tests
 tool_call_id: call-64a55350-39c6-460d-8d56-2285ef52a5fb-29
 fc_4ade7ba5-54e8-952c-ad0b-3464dc676f78_0
 detail: exit_code=1
-output_path: C:\Users\mbassav2\.cursor\projects\c-Users-mbassav2-Work-Work-Current-Research-UoM-AI-Google-co-scientist-Percolation-Pilot-04-Simulation-and-analysis-reimplementation-cursor\terminals\629950.txt
+output_path: <LOCAL_PATH>
 </task>
 </system_notification>
 
@@ -91,7 +91,7 @@ task_id: 629951
 title: Benchmark cylinder insertion throughput
 tool_call_id: call-2448cb43-76a6-4cac-8bcc-456e675bfceb-38
 fc_2d4b69a9-95be-9978-9119-00a10542beef_0
-output_path: C:\Users\mbassav2\.cursor\projects\c-Users-mbassav2-Work-Work-Current-Research-UoM-AI-Google-co-scientist-Percolation-Pilot-04-Simulation-and-analysis-reimplementation-cursor\terminals\629951.txt
+output_path: <LOCAL_PATH>
 </task>
 </system_notification>
 
@@ -106,7 +106,7 @@ task_id: 629952
 title: Run deterministic tests and all cases
 tool_call_id: call-6dea884f-2118-45cd-b081-b098245c94e3-45
 fc_04425ebe-7431-9d59-8694-753098f0f87d_0
-output_path: C:\Users\mbassav2\.cursor\projects\c-Users-mbassav2-Work-Work-Current-Research-UoM-AI-Google-co-scientist-Percolation-Pilot-04-Simulation-and-analysis-reimplementation-cursor\terminals\629952.txt
+output_path: <LOCAL_PATH>
 </task>
 </system_notification>
 <user_query>Briefly inform the user about the task result and perform any follow-up actions (if needed). If there's no follow-ups needed, don't explicitly say that.</user_query>

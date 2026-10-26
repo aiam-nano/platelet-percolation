@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.4 (private, pre-freeze)
+
+Redaction. `tools/redact_transcripts.py --write` has been applied to the two session transcripts (`level3/cursor_instructions_execution_process.md`, `level4/cursor_instructions_execution_findings.md`): home-directory paths, the Cursor project-folder name and the operator's login name are replaced by placeholders (8 replacements). The unredacted originals are kept outside the repository. No code, law, calibration or result changed; `CHECKSUMS.sha256` is regenerated.
+
 ## v0.1.3 (private, pre-freeze)
 
 Licence. `LICENSE` (MIT) and `NOTICE.md` (what the licence does not cover: outputs of Google's Hypothesis Generation tool and other AI services, extracted published values, third-party software) replace `LICENSE_PENDING.md`. `CITATION.cff` and `.zenodo.json` now name the licence. No code, law, calibration or result changed.

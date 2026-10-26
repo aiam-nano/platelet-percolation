@@ -50,7 +50,7 @@ task_id: 461893
 title: Run quick regression suite
 tool_call_id: call-1da9685f-0e42-473c-8316-e043b98f3cbf-18
 fc_dc78cf90-c102-92bd-b087-2e448c9431eb_0
-output_path: C:\Users\mbassav2\.cursor\projects\c-Users-mbassav2-Work-Work-Current-Research-UoM-AI-Google-co-scientist-Percolation-Pilot-04-Simulation-and-analysis-review-cursor\terminals\461893.txt
+output_path: <LOCAL_PATH>
 </task>
 </system_notification>
 
@@ -65,7 +65,7 @@ task_id: 461894
 title: Run law, exam, and document checks
 tool_call_id: call-62a8c8a6-84b2-4854-b4be-31fb117d2837-69
 fc_412b61a2-8f60-9984-a4e2-654c378881fd_1
-output_path: C:\Users\mbassav2\.cursor\projects\c-Users-mbassav2-Work-Work-Current-Research-UoM-AI-Google-co-scientist-Percolation-Pilot-04-Simulation-and-analysis-review-cursor\terminals\461894.txt
+output_path: <LOCAL_PATH>
 </task>
 </system_notification>
 
@@ -80,7 +80,7 @@ task_id: 461895
 title: Run geometry adversarial tests
 tool_call_id: call-62a8c8a6-84b2-4854-b4be-31fb117d2837-70
 fc_412b61a2-8f60-9984-a4e2-654c378881fd_2
-output_path: C:\Users\mbassav2\.cursor\projects\c-Users-mbassav2-Work-Work-Current-Research-UoM-AI-Google-co-scientist-Percolation-Pilot-04-Simulation-and-analysis-review-cursor\terminals\461895.txt
+output_path: <LOCAL_PATH>
 </task>
 </system_notification>
 
@@ -96,7 +96,7 @@ title: Run wrap, face, and FSS checks
 tool_call_id: call-60882d77-27a3-4f1a-8dfe-42387dbe424e-82
 fc_633d779f-f957-9be2-a7a6-205743f22929_0
 detail: exit_code=1
-output_path: C:\Users\mbassav2\.cursor\projects\c-Users-mbassav2-Work-Work-Current-Research-UoM-AI-Google-co-scientist-Percolation-Pilot-04-Simulation-and-analysis-review-cursor\terminals\461896.txt
+output_path: <LOCAL_PATH>
 </task>
 </system_notification>
 <user_query>Briefly inform the user about the task result and perform any follow-up actions (if needed). If there's no follow-ups needed, don't explicitly say that.</user_query>
