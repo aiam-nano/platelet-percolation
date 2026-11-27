@@ -4,7 +4,7 @@ Working note for the authors. Nothing here has been done unless it is marked don
 
 ## Where things stand (27 November 2026)
 
-v1.0.0 is committed, the repository is public at https://github.com/aiam-nano/platelet-percolation, and the Zenodo integration is switched on. The release `v1.0.0` triggers the archive; the concept DOI is then added to `CITATION.cff`, the README and the paper.
+v1.0.0 is released and archived on Zenodo: concept DOI 10.5281/zenodo.24612913 (all versions), version DOI 10.5281/zenodo.24612914. The concept DOI is in `CITATION.cff` and the README. A later release (for example v1.0.1) gets its own version DOI under the same concept DOI.
 
 ## Release steps, in order
 

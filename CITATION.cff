@@ -1,4 +1,4 @@
-# Citation metadata for the release. The Zenodo DOI is added after the archive of v1.0.0 has been minted.
+# Citation metadata for the release. The DOI is the Zenodo concept DOI (all versions); version 1.0.0 is 10.5281/zenodo.24612914.
 cff-version: 1.2.0
 message: "If you use this software, please cite it using the metadata below, and the accompanying paper once it is published."
 title: "platelet-percolation: simulator and semi-empirical model of the geometric percolation threshold of finite-thickness platelets"
@@ -13,6 +13,7 @@ authors:
     affiliation: "Department of Materials and National Graphene Institute, The University of Manchester"
     orcid: "https://orcid.org/0000-0001-8289-2337"
 license: MIT
+doi: "10.5281/zenodo.24612913"
 repository-code: "https://github.com/aiam-nano/platelet-percolation"
 date-released: "2026-11-27"
 abstract: "Monte Carlo simulator for the geometric percolation threshold of penetrable platelets of finite thickness, and a semi-empirical model of that threshold with five fitted constants (thickness, restacking, log-normal size dispersity, aligned domains and out-of-plane ripple), together with the calibration, the pre-registered tests, the sealed-exam records and the verification records behind the paper."

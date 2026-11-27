@@ -8,7 +8,7 @@ Records. `code/exam_B/score_exam_B_output.txt` (the scoring of Exam B: ten of te
 
 Figures. `figures/` (new): the figures of the paper and the SI as PDF, the source data of every panel as CSV files, and the drawing scripts. Every figure regenerates from the repository alone, using the six small result files in `figures/data/` (`figures/README.md`).
 
-Metadata. `CITATION.cff` and `.zenodo.json` name both authors and the version 1.0.0; `README.md` is updated. `CHECKSUMS.sha256` is regenerated. The repository is public at https://github.com/aiam-nano/platelet-percolation; the Zenodo DOI is added to the citation files after the archive is minted.
+Metadata. `CITATION.cff` and `.zenodo.json` name both authors and the version 1.0.0; `README.md` is updated. `CHECKSUMS.sha256` is regenerated. The repository is public at https://github.com/aiam-nano/platelet-percolation; the Zenodo archive has the concept DOI 10.5281/zenodo.24612913 (all versions) and, for this version, 10.5281/zenodo.24612914.
 
 ## v0.1.4 (private, pre-freeze)
 

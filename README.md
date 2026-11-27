@@ -54,4 +54,4 @@ The code, the documents and most of the analysis were written by Claude (Anthrop
 
 ## Citation and licence
 
-`CITATION.cff` and `.zenodo.json` carry the citation metadata; the repository address and the DOI are added at release. The repository is released under the MIT licence (`LICENSE`); `NOTICE.md` lists what the licence does not cover, in particular outputs of Google's Hypothesis Generation tool and other AI services, which stay subject to the providers' terms.
+`CITATION.cff` and `.zenodo.json` carry the citation metadata. Cite all versions with the Zenodo DOI [10.5281/zenodo.24612913](https://doi.org/10.5281/zenodo.24612913); version 1.0.0 is [10.5281/zenodo.24612914](https://doi.org/10.5281/zenodo.24612914). The repository is released under the MIT licence (`LICENSE`); `NOTICE.md` lists what the licence does not cover, in particular outputs of Google's Hypothesis Generation tool and other AI services, which stay subject to the providers' terms.
