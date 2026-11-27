@@ -1,0 +1,6 @@
+lever,factor_on_phi_c
+restacking $N$ = 1 to 10,7.7794
+"alignment $S$ = 0.5, $d$ = 2",1.8046
+"ripple $a$ = 3.5, $\lambda$ = 0.5",1.7327
+thickness $A$ = 10 vs thin limit,0.7535
+size dispersity $\sigma$ = 0.5,0.6672

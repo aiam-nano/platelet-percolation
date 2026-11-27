@@ -1,0 +1,15 @@
+exam_B/spec.json       unchanged since filing: True
+finallaw3.py           unchanged since filing: True
+mylaw.py               unchanged since filing: True
+align.py               unchanged since filing: True
+G1   law 0.01387 truth 0.01378 error +0.7%
+G2   law 0.08742 truth 0.08750 error -0.1%
+G3   law 0.02941 truth 0.02864 error +2.7%
+G4   law 0.04674 truth 0.04712 error -0.8%
+G5   law 0.01540 truth 0.01530 error +0.7%
+G6   law 0.08567 truth 0.08405 error +1.9%
+G7   law 0.01482 truth 0.01440 error +2.9%
+G8   law 1.37962 truth 1.40210 error -1.6%
+G9   law 1.10141 truth 1.08130 error +1.9%
+G10  law 1.21586 truth 1.25330 error -3.0%
+mean absolute error over 10 cases: 1.62%

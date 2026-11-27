@@ -2,9 +2,18 @@
 
 Working note for the authors. Nothing here has been done unless it is marked done.
 
-## Where things stand
+## Where things stand (27 November 2026)
 
-v0.1.0 (25 October 2026) was a private, pre-freeze snapshot; v0.1.1 (the same day) adds the Level 3 and Level 4 records and the polygon-contact correction; v0.1.2 (the same night) adds the offset diagnostics, the stacked-ripple mesh test, the Level 3 input arrays and Exam B. It is a private, pre-freeze snapshot of the simulator, the law, the calibration, the regression suite, the verification scripts and the reproduction note. It has an MIT licence (added in v0.1.3) and no DOI.
+The freeze review is passed, Exam B has been run and scored, and the paper cites a public repository with a Zenodo archive of its v1.0.0 release. The working tree holds the release candidate: the experimental comparison is corrected to the 16 cases of Supplementary Table 4, the citation metadata name both authors, and `CHECKSUMS.sha256` is regenerated (208 files). These changes are not yet committed. Nothing has been made public and no DOI exists.
+
+## Release steps, in order
+
+1. Decide the repository name and owner, and confirm the copyright line in `LICENSE` with the university. Tell the technology-transfer office before the repository goes public.
+2. Commit the working tree (`git add -A && git commit`), create the repository on GitHub, push, and make it public.
+3. Log in to Zenodo with the GitHub account, switch the repository on under GitHub settings, and create the release `v1.0.0` on GitHub. Zenodo issues a version DOI and a concept DOI.
+4. Put the repository address and the concept DOI in `CITATION.cff` (`repository-code`, `doi`, `date-released`), in `.zenodo.json` (`related_identifiers`, optional) and in the paper's Code availability statement and Supplementary Note 7. If the archive must carry them, make that commit and tag again before the release is archived (delete the draft release on Zenodo's side first), or create `v1.0.1`.
+5. Create the separate Zenodo data record (Group B of Supplementary Note 7: result files, Exam B truth and log, redacted session records, figure source data and a manifest of checksums) and put its DOI in the Data availability statement.
+6. Before the repository is public, check `git ls-files` for anything not meant to be released (`code/exam_B/truth_sealed_B.json` is deliberately ignored and goes into the data record instead).
 
 ## Before the freeze (v0.x)
 

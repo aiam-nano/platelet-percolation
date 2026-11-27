@@ -10,3 +10,5 @@ code/test_report.json
 code/exam_B/truth_sealed_B.json
 code/exam_B/truth_B_raw.pkl
 *.orig
+
+figures/*.png

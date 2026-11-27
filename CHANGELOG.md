@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.0.0 release candidate (27 November 2026, not yet tagged)
+
+Experimental comparison. `code/literature_checks/experimental_comparison.py` and `.csv` now give the 16 cases from 11 papers with the transcribed values as used in Supplementary Table 4 of the paper (measured over model: median 4.4, range 0.14 to 177). No case is excluded. No code, model, calibration or simulation result changed, and the model files are byte-identical to v0.1.4; only the comparison script and its output differ.
+
+Records. `code/exam_B/score_exam_B_output.txt` (the scoring of Exam B: ten of ten cases within 6 per cent, mean absolute error 1.6 per cent) is added to the repository.
+
+Figures. `figures/` (new): the figures of the paper and the SI as PDF, the source data of every panel as CSV files, and the drawing scripts. Every figure regenerates from the repository alone, using the six small result files in `figures/data/` (`figures/README.md`).
+
+Metadata. `CITATION.cff` and `.zenodo.json` name both authors and the version 1.0.0; `README.md` is updated to the release-candidate state. `CHECKSUMS.sha256` is regenerated. The repository address, the release date and the DOIs are added at release (`RELEASING.md`).
+
 ## v0.1.4 (private, pre-freeze)
 
 Redaction. `tools/redact_transcripts.py --write` has been applied to the two session transcripts (`level3/cursor_instructions_execution_process.md`, `level4/cursor_instructions_execution_findings.md`): home-directory paths, the Cursor project-folder name and the operator's login name are replaced by placeholders (8 replacements). The unredacted originals are kept outside the repository. No code, law, calibration or result changed; `CHECKSUMS.sha256` is regenerated.

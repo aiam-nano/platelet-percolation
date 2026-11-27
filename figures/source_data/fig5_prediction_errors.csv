@@ -1,0 +1,34 @@
+test,family,error_percent,window_half_width_percent,status
+G1a,Averaging conversions,-0.7,6,pass
+G1b,Averaging conversions,0.6,6,pass
+G1c,Averaging conversions,0.3,6,pass
+B1 bimodal,Non-log-normal distributions,7.6,8,pass
+B2 bimodal,Non-log-normal distributions,18.7,8,fail
+H1 log-normal 0.8,Non-log-normal distributions,23.6,8,fail
+Q1 Pareto,Non-log-normal distributions,-6.7,8,pass
+C1,Thickness tied to radius,-1.5,6,pass
+C2,Thickness tied to radius,0.5,6,pass
+C3,Thickness tied to radius,-0.2,6,pass
+C4,Thickness tied to radius,0.2,6,pass
+P1,Ripple with dispersity,-3.5,8,pass
+P2,Ripple with dispersity,-4.4,8,pass
+P3,Ripple with dispersity,-0.7,8,pass
+P4,Ripple with dispersity,4.8,8,pass
+TB1,Thick biaxial slabs,0.2,8,pass
+TB2,Thick biaxial slabs,-1.2,8,pass
+TB3,Thick biaxial slabs,1.9,8,pass
+TB4,Thick biaxial slabs,-1.5,8,pass
+TB5,Thick biaxial slabs,-3.2,15,pass
+R1,Random wrinkle fields,1.5,8,pass
+R2,Random wrinkle fields,0.2,8,pass
+R3,Random wrinkle fields,-4.5,8,pass
+R4,Random wrinkle fields,4.4,8,pass
+F1,Sealed exam (model with refitted prefactor),0.3,,exam
+F2,Sealed exam (model with refitted prefactor),0.4,,exam
+F3,Sealed exam (model with refitted prefactor),-0.4,,exam
+F4,Sealed exam (model with refitted prefactor),0.0,,exam
+F10 ripple,Sealed exam (model with refitted prefactor),1.9,,exam
+F11 ripple,Sealed exam (model with refitted prefactor),0.8,,exam
+F8 aligned,Sealed exam (model with refitted prefactor),1.1,,post
+F9 aligned,Sealed exam (model with refitted prefactor),1.0,,post
+F12 aligned,Sealed exam (model with refitted prefactor),3.8,,post

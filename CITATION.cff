@@ -1,14 +1,24 @@
-# Draft. Authors, version, date and DOI are to be decided by the authors before any public release.
+# Citation metadata for the release. The repository address, the release date and the Zenodo DOI are added when the
+# repository is made public and v1.0.0 is released (see RELEASING.md); they are not known before then.
 cff-version: 1.2.0
-message: "If you use this software, please cite it as below."
-title: "Platelet percolation simulator and calibrated multivariate threshold law"
+message: "If you use this software, please cite it using the metadata below, and the accompanying paper once it is published."
+title: "platelet-percolation: simulator and semi-empirical model of the geometric percolation threshold of finite-thickness platelets"
 type: software
-version: "0.1.2"
-date-released: "TBD"
+version: "1.0.0"
 authors:
+  - family-names: "Iliut"
+    given-names: "Maria"
+    affiliation: "Department of Materials and National Graphene Institute, The University of Manchester"
   - family-names: "Vijayaraghavan"
     given-names: "Aravind"
-    affiliation: "University of Manchester"
+    affiliation: "Department of Materials and National Graphene Institute, The University of Manchester"
+    orcid: "https://orcid.org/0000-0001-8289-2337"
 license: MIT
-repository-code: "TBD"
-doi: "TBD"
+abstract: "Monte Carlo simulator for the geometric percolation threshold of penetrable platelets of finite thickness, and a semi-empirical model of that threshold with five fitted constants (thickness, restacking, log-normal size dispersity, aligned domains and out-of-plane ripple), together with the calibration, the pre-registered tests, the sealed-exam records and the verification records behind the paper."
+keywords:
+  - percolation
+  - platelets
+  - excluded volume
+  - graphene
+  - nanocomposites
+  - Monte Carlo

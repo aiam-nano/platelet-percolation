@@ -1,0 +1,17 @@
+system,A_geomean,measured_geomean_vol_pct,measured_over_1.44_per_A,kind
+Few-layer graphene in NMP,1000.0,0.1999,1.386,rheological (rigidity)
+xGn-25 in PLA,3571.0,4.0804,101.042,rheological and electrical
+N02 in PLA,10000.0,0.3521,24.418,rheological and electrical
+GNP in UPR (12.1 um / 51.5 nm),235.0,0.64,1.043,electrical
+Foliated graphite in nylon 6,235.0,0.74,1.206,electrical
+Graphite sheets in PMMA (UG),89.4,2.0,1.24,electrical
+Graphite nanosheets in PMMA,223.6,0.31,0.481,electrical
+GNS in TPU,1272.0,0.55,4.851,electrical
+GNP-L in PLA,257.9,3.4482,6.166,electrical
+GNP-S in PLA,80.5,6.7838,3.787,electrical
+xGnP-1 in PP (powder coated),200.0,0.1,0.139,electrical
+xGnP-1 in PP (melt mixed),200.0,8.4853,11.768,electrical
+xGnP-15 in PP (powder coated),3000.0,0.3,6.241,electrical
+xGnP-15 in PP (melt mixed),3000.0,8.4853,176.519,electrical
+GNP in PLA (AFM),33.0,2.9155,0.667,rheological and electrical
+xGnP-M-15 in epoxy,2143.0,0.99,14.712,electrical

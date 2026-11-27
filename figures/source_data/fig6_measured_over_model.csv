@@ -1,0 +1,17 @@
+system,ratio_mid,ratio_low,ratio_high,kind
+"xGnP-15 in PP, melt-mixed (Kalaitzidou 2010)",176.71,166.6,187.43,electrical
+xGn-25 in PLA (Sabzi 2013),101.13,91.7,111.53,rheological and electrical
+N02 in PLA (Sabzi 2013),24.43,21.5,27.75,rheological and electrical
+xGnP-M-15 in epoxy (King 2012),14.73,14.73,14.73,electrical
+"xGnP-1 in PP, melt-mixed (Kalaitzidou 2010)",11.96,11.28,12.68,electrical
+"xGnP-15 in PP, powder-coated (Kalaitzidou 2010)",6.25,6.25,6.25,electrical
+GNP-L in PLA (Gao 2017),6.24,3.89,10.04,electrical
+Graphene nanosheets in TPU (Jan 2016),4.86,4.86,4.86,electrical
+GNP-S in PLA (Gao 2017),3.94,2.34,6.67,electrical
+Few-layer graphene in NMP (Barwich 2015),2.01,1.96,2.06,rigidity
+Graphite sheets in PMMA (Zheng 2002),1.29,1.15,1.43,electrical
+Foliated graphite in nylon 6 (Weng 2005),1.22,1.22,1.22,electrical
+GNP in polyester (Lu 2006),1.06,1.06,1.06,electrical
+"GNP in PLA, AFM sizes (Lashgari 2025)",0.73,0.63,0.85,rheological and electrical
+Graphite nanosheets in PMMA (Chen 2003),0.49,0.22,1.08,electrical
+"xGnP-1 in PP, powder-coated (Kalaitzidou 2010)",0.14,0.14,0.14,electrical

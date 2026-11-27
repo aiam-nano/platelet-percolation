@@ -1,0 +1,12 @@
+scene,group,flakes_at_first_wrap,flakes_in_spanning_cluster,S_local_pair
+thin,zero-thickness discs,837,236,
+cyl10,finite thickness,815,608,
+cyl100,finite thickness,979,746,
+stack3,restacked,709,319,
+stack5,restacked,760,401,
+ln3,log-normal radii,573,86,
+ln5,log-normal radii,519,231,
+al_a,aligned domains,958,143,0.11
+al_b,aligned domains,1114,359,0.408
+rip1,rippled sheets,1066,348,
+rip3,rippled sheets,1378,1000,
