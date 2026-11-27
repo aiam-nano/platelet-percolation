@@ -4,7 +4,7 @@ Working note for the authors. Nothing here has been done unless it is marked don
 
 ## Where things stand (27 November 2026)
 
-The freeze review is passed, Exam B has been run and scored, and the paper cites a public repository with a Zenodo archive of its v1.0.0 release. The working tree holds the release candidate: the experimental comparison is corrected to the 16 cases of Supplementary Table 4, the citation metadata name both authors, and `CHECKSUMS.sha256` is regenerated (208 files). These changes are not yet committed. Nothing has been made public and no DOI exists.
+v1.0.0 is committed, the repository is public at https://github.com/aiam-nano/platelet-percolation, and the Zenodo integration is switched on. The release `v1.0.0` triggers the archive; the concept DOI is then added to `CITATION.cff`, the README and the paper.
 
 ## Release steps, in order
 

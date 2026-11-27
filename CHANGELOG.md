@@ -1,6 +1,6 @@
 # Changelog
 
-## v1.0.0 release candidate (27 November 2026, not yet tagged)
+## v1.0.0 (27 November 2026)
 
 Experimental comparison. `code/literature_checks/experimental_comparison.py` and `.csv` now give the 16 cases from 11 papers with the transcribed values as used in Supplementary Table 4 of the paper (measured over model: median 4.4, range 0.14 to 177). No case is excluded. No code, model, calibration or simulation result changed, and the model files are byte-identical to v0.1.4; only the comparison script and its output differ.
 
@@ -8,7 +8,7 @@ Records. `code/exam_B/score_exam_B_output.txt` (the scoring of Exam B: ten of te
 
 Figures. `figures/` (new): the figures of the paper and the SI as PDF, the source data of every panel as CSV files, and the drawing scripts. Every figure regenerates from the repository alone, using the six small result files in `figures/data/` (`figures/README.md`).
 
-Metadata. `CITATION.cff` and `.zenodo.json` name both authors and the version 1.0.0; `README.md` is updated to the release-candidate state. `CHECKSUMS.sha256` is regenerated. The repository address, the release date and the DOIs are added at release (`RELEASING.md`).
+Metadata. `CITATION.cff` and `.zenodo.json` name both authors and the version 1.0.0; `README.md` is updated. `CHECKSUMS.sha256` is regenerated. The repository is public at https://github.com/aiam-nano/platelet-percolation; the Zenodo DOI is added to the citation files after the archive is minted.
 
 ## v0.1.4 (private, pre-freeze)
 
